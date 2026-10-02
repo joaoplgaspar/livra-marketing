@@ -1,0 +1,435 @@
+{
+  "atualizado": "2026-10-01",
+  "semana": {
+    "id": "2026-W40",
+    "titulo": "Esquenta (qui 01 → dom 04) e semana 41 (05 → 11/10)",
+    "plano": "calendario/2026-W41.md",
+    "ancora": "Temporada 1 da liga começa seg 05/10 (até 29/11)."
+  },
+  "decisoes": [
+    "Pistas das conquistas secretas: o slide 8 da 1.11 prometeu \"nos próximos dias\" (público desde 28/09). No app 1.11 elas chegam sem cartão de desbloqueio (BUG-303, conserto no build 1.12). Soltar já ou segurar até o 1.12?",
+    "Verba dos Reels: quanto turbinar em cada um (ter 06 e sex 09). Comparar custo por seguidor com os Reels antigos."
+  ],
+  "aprendizados": [
+    "~200 dos 222 seguidores vieram de Reels turbinados (fundador, 30/09). Reel = aquisição; carrossel = salvamento e quem já usa.",
+    "Carrossel da 1.11: 8,7% de não seguidores, 0 seguidor novo, 11 toques no link (48h).",
+    "Capa nunca no mesmo molde dos 2 posts anteriores no grid (fundador, 01/10)."
+  ],
+  "posts": [
+    {
+      "id": "story-lua-sol",
+      "tipo": "story",
+      "titulo": "Story: Lua e Sol na Loja",
+      "data": "2026-10-01",
+      "status": "pronto",
+      "pasta": "stories-semana/qui-01-lua-e-sol",
+      "capa": "1-story.png",
+      "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
+      "meta": "só imagem/vídeo",
+      "notas": [
+        "v4 (01/10): tela cheia Lua → tela cheia Sol → card com os dois celulares.",
+        "No celular: o perfil da @livraapp no tema, com o ambiente real (estrelas e lua; luz do Sol) se mexendo e as medalhas reais.",
+        "Lua e Sol na Loja: 1.500 moedas cada, até 30/11.",
+        "Vídeo de 10,5 s sem som: a música entra no Instagram."
+      ],
+      "pendencias": [
+        "Postar o vídeo (ou a imagem) e pôr uma música.",
+        "Opcional: adesivo de link pra loja do app."
+      ]
+    },
+    {
+      "id": "story-contagem",
+      "tipo": "story",
+      "titulo": "Story: segunda a liga zera",
+      "data": "2026-10-02",
+      "status": "pronto",
+      "pasta": "stories-semana/sex-02-contagem-temporada",
+      "capa": "1-story.png",
+      "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
+      "meta": "adesivo: contagem regressiva",
+      "notas": [
+        "Junto: repost do carrossel da Regra dos 50 (compartilhar o post no story).",
+        "Vídeo de 6 s sem som: a música entra no Instagram."
+      ],
+      "pendencias": [
+        "Colar o adesivo de CONTAGEM REGRESSIVA no espaço vazio (ver o guia): \"Temporada 1\", 05/10 00h.",
+        "Pôr música e postar."
+      ]
+    },
+    {
+      "id": "story-enquete",
+      "tipo": "story",
+      "titulo": "Story: você tá em qual liga?",
+      "data": "2026-10-03",
+      "status": "pronto",
+      "pasta": "stories-semana/sab-03-enquete-liga",
+      "capa": "1-story.png",
+      "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
+      "meta": "adesivo: enquete",
+      "notas": [
+        "Junto, às 20h: repost do Reel \"segunda a liga muda\".",
+        "Vídeo de 6 s sem som: a música entra no Instagram."
+      ],
+      "pendencias": [
+        "Colar o adesivo de ENQUETE no espaço vazio: Bronze · Prata · Ouro · Diamante.",
+        "Pôr música e postar."
+      ]
+    },
+    {
+      "id": "story-fecha-21h",
+      "tipo": "story",
+      "titulo": "Story: a última semana fecha às 21h",
+      "data": "2026-10-04",
+      "status": "pronto",
+      "pasta": "stories-semana/dom-04-fecha-21h",
+      "capa": "1-story.png",
+      "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
+      "meta": "adesivo: contagem (opcional)",
+      "notas": [
+        "A semana da liga fecha seg 00:05 UTC = dom 21h05 de Brasília (scheduler.ts:137).",
+        "Vídeo de 6 s sem som: a música entra no Instagram."
+      ],
+      "pendencias": [
+        "Opcional: adesivo de contagem regressiva pra hoje 21h no espaço vazio.",
+        "Pôr música e postar."
+      ]
+    },
+    {
+      "id": "story-comecou",
+      "tipo": "story",
+      "titulo": "Story: começou a Temporada 1",
+      "data": "2026-10-05",
+      "status": "pronto",
+      "pasta": "stories-semana/seg-05-comecou",
+      "capa": "1-story.png",
+      "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
+      "meta": "só imagem/vídeo",
+      "notas": [
+        "Junto: repost do carrossel da Temporada 1.",
+        "Vídeo de 6 s sem som: a música entra no Instagram."
+      ],
+      "pendencias": [
+        "Pôr música e postar; depois compartilhar o carrossel no story."
+      ]
+    },
+    {
+      "id": "story-caixinha",
+      "tipo": "story",
+      "titulo": "Story: qual livro você largou?",
+      "data": "2026-10-07",
+      "status": "pronto",
+      "pasta": "stories-semana/qua-07-caixinha",
+      "capa": "1-story.png",
+      "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
+      "meta": "adesivo: caixinha",
+      "notas": [
+        "Puxa a Regra dos 50 (postada sex 02).",
+        "Vídeo de 6 s sem som: a música entra no Instagram."
+      ],
+      "pendencias": [
+        "Colar o adesivo de CAIXINHA DE PERGUNTA no espaço vazio.",
+        "Pôr música e postar. Repostar as melhores respostas."
+      ]
+    },
+    {
+      "id": "story-primeira-semana",
+      "tipo": "story",
+      "titulo": "Story: 1ª semana da temporada fecha às 21h",
+      "data": "2026-10-11",
+      "status": "pronto",
+      "pasta": "stories-semana/dom-11-primeira-semana",
+      "capa": "1-story.png",
+      "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
+      "meta": "só imagem/vídeo",
+      "notas": [
+        "Repostar também o post que mais salvou na semana.",
+        "Vídeo de 6 s sem som: a música entra no Instagram."
+      ],
+      "pendencias": [
+        "Pôr música e postar."
+      ]
+    },
+    {
+      "id": "reel-temporada-esquenta",
+      "tipo": "reel",
+      "titulo": "Segunda a liga muda",
+      "data": "2026-10-03",
+      "hora": "20:00",
+      "status": "material",
+      "pasta": "reel-temporada-esquenta",
+      "roteiro": "roteiro.md",
+      "meta": "alcance (turbinar) + aviso do reset",
+      "notas": [
+        "Devlog do porquê da temporada: o Diamante era beco (não sobe).",
+        "Avisa antes que todo mundo desce uma liga no fim (recomendação do estudo da liga).",
+        "Prints reais da 1.11 no estado de antes de 05/10 + clipe da escada."
+      ],
+      "pendencias": [
+        "Narrar e montar (não há tela pra gravar).",
+        "Decidir verba."
+      ],
+      "capa": "material/escada-1-teto.png"
+    },
+    {
+      "id": "temporada-1",
+      "tipo": "carrossel",
+      "titulo": "A liga zerou. Temporada 1",
+      "data": "2026-10-05",
+      "hora": "12:00",
+      "status": "aprovar",
+      "pasta": "carrossel-temporada-1",
+      "legenda": "legenda.txt",
+      "fonte": "lura/marketing/instagram/2026-10-temporada-1/carrossel.html",
+      "meta": "quem já usa o app",
+      "notas": [
+        "Prints reais da 1.11 (só recortes sem data).",
+        "Prêmios, 40 dias, 50.000 páginas e pontos conferidos no código em 30/09; coleção seasons vazia em prod (sem override).",
+        "Já é PRO e fecha os 40 dias → os 14 dias viram presente.",
+        "Capa nova 01/10: terracota com os 8 domingos."
+      ],
+      "pendencias": [
+        "Aprovar a folha.",
+        "No dia: reconferir os números dos prêmios no código."
+      ]
+    },
+    {
+      "id": "reel-cor-da-capa",
+      "tipo": "reel",
+      "titulo": "O app errou a cor desse livro",
+      "data": "2026-10-06",
+      "hora": "20:00",
+      "status": "material",
+      "pasta": "reel-cor-da-capa",
+      "roteiro": "roteiro.md",
+      "meta": "alcance (turbinar)",
+      "notas": [
+        "Medido com o código da 1.11: capa azul da Hipótese → acerta (azul); edição lilás \"Novo capítulo extra\" → botões marrons (cabelo).",
+        "Clipes de motion gerados com o resultado real do código."
+      ],
+      "pendencias": [
+        "Gravar ① capa azul e ② edição lilás na conta @livraapp (modo Automático).",
+        "Conferir se os botões da lilás saem marrons no celular. Se não, avisar antes de narrar.",
+        "Narrar, montar, decidir verba."
+      ],
+      "capa": "material/A-novo-capitulo-extra-1-capa.png"
+    },
+    {
+      "id": "regra-dos-50",
+      "tipo": "carrossel",
+      "titulo": "Regra dos 50",
+      "data": "2026-10-02",
+      "hora": "12:00",
+      "status": "pronto",
+      "pasta": "carrossel-regra-dos-50",
+      "legenda": "legenda.txt",
+      "fonte": "lura/marketing/instagram/2026-09-regra-dos-50/carrossel.html",
+      "meta": "salvamento",
+      "notas": [
+        "Pronto desde 24/09 e nunca postado (não aparece no grid em 30/09).",
+        "Ponte: flair \"Larguei Sem Culpa\" (loja, 400 moedas).",
+        "Antecipado para o esquenta (01/10): era qua 07."
+      ],
+      "pendencias": [
+        "Reconferir que o flair segue na Loja."
+      ]
+    },
+    {
+      "id": "reel-clube-do-livro",
+      "tipo": "reel",
+      "titulo": "Vocês transformaram minha liga em clube",
+      "data": "2026-10-09",
+      "hora": "20:00",
+      "status": "material",
+      "pasta": "reel-clube-do-livro",
+      "roteiro": "roteiro.md",
+      "meta": "alcance + teste de interesse",
+      "notas": [
+        "Existe: liga privada, convite por código; convite por link só na web.",
+        "Pote, roleta e progresso = mock aprovado, com selo EM CONSTRUÇÃO em tudo.",
+        "Não mostrar nome real de liga, quem criou nem quantas ligas existem."
+      ],
+      "pendencias": [
+        "Gravar liga privada real na @livraapp (borrar nomes de pessoas).",
+        "Narrar, montar, decidir verba.",
+        "48h: comentários com \"clube\" ÷ alcance."
+      ],
+      "capa": "material/telas-com-selo/3b-revelacao.png"
+    },
+    {
+      "id": "12-paginas",
+      "tipo": "carrossel",
+      "titulo": "12 páginas por dia",
+      "data": "2026-10-10",
+      "hora": "11:00",
+      "status": "aprovar",
+      "pasta": "carrossel-12-paginas",
+      "legenda": "legenda.txt",
+      "fonte": "lura/marketing/instagram/2026-10-12-paginas/carrossel.html",
+      "meta": "salvamento",
+      "notas": [
+        "Conta no slide: 12 × 365 ÷ 300 = 14,6 (300 páginas = suposição declarada).",
+        "Capa nova 01/10: amarelo com o 12 gigante."
+      ],
+      "pendencias": [
+        "Aprovar a folha."
+      ]
+    },
+    {
+      "id": "reel-ressaca-literaria",
+      "tipo": "reel",
+      "titulo": "Ressaca literária (gravado por outra pessoa)",
+      "status": "reserva",
+      "pasta": "reel-ressaca-literaria",
+      "roteiro": "roteiro.md",
+      "notas": [
+        "Roteiro para gravar com pessoa na câmera. Reserva desde 01/10 (quem grava é o fundador)."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "reel-releitura",
+      "tipo": "reel",
+      "titulo": "Releitura conta (gravado por outra pessoa)",
+      "status": "reserva",
+      "pasta": "reel-releitura",
+      "roteiro": "roteiro.md",
+      "notas": [
+        "Reserva desde 01/10."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "novidades-1-11",
+      "tipo": "carrossel",
+      "titulo": "Novidades da 1.11",
+      "data": "2026-09-28",
+      "status": "postado",
+      "pasta": "carrossel-novidades-1-11",
+      "legenda": "legenda.txt",
+      "fonte": "lura/marketing/instagram/2026-10-novidades-1-11/carrossel.html",
+      "metricas": {
+        "lido em": "30/09 (~48h)",
+        "visualizações": 184,
+        "não seguidores": "8,7%",
+        "contas alcançadas": 72,
+        "curtidas": 22,
+        "comentários": 3,
+        "envios": 3,
+        "salvamentos": 2,
+        "toques no link": 11,
+        "seguidores novos": 0
+      },
+      "notas": [
+        "O slide 8 promete as pistas das secretas \"nos próximos dias\" (ver decisões)."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "story-1-11",
+      "tipo": "story",
+      "titulo": "Story: atualiza para a 1.11",
+      "status": "confirmar",
+      "pasta": "story-1-11",
+      "fonte": "lura/marketing/instagram/2026-10-story-1-11/story.html",
+      "notas": [
+        "Sticker de link colado no app do Instagram."
+      ],
+      "pendencias": [
+        "Confirmar se já saiu."
+      ]
+    },
+    {
+      "id": "aviso-1-11",
+      "tipo": "aviso",
+      "titulo": "Aviso no app: a 1.11 chegou",
+      "status": "confirmar",
+      "pasta": "aviso-1-11",
+      "roteiro": "copy.md",
+      "notas": [
+        "Vai no /admin › Avisos, só depois da 1.11 aprovada nas duas lojas."
+      ],
+      "pendencias": [
+        "Confirmar se já foi publicado."
+      ]
+    },
+    {
+      "id": "cadastro-manual",
+      "tipo": "carrossel",
+      "titulo": "Cadastro manual",
+      "status": "arquivo",
+      "pasta": "carrossel-cadastro-manual",
+      "legenda": "legenda.txt",
+      "notas": [
+        "Não postado; o assunto entrou no carrossel da 1.11."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "novidades-1-10",
+      "tipo": "carrossel",
+      "titulo": "Novidades da 1.10",
+      "status": "arquivo",
+      "pasta": "carrossel-novidades-1-10",
+      "legenda": "legenda.txt",
+      "notas": [
+        "Não aparece no grid (30/09); superado pela 1.11."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "cards-exportaveis",
+      "tipo": "carrossel",
+      "titulo": "Ninguém lê igual a você",
+      "status": "postado",
+      "pasta": "cards-exportaveis",
+      "notas": [
+        "Agosto. Está no grid."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "carrossel-beta",
+      "tipo": "carrossel",
+      "titulo": "Se livra dele",
+      "status": "postado",
+      "pasta": "carrossel-beta",
+      "notas": [
+        "Agosto. Está no grid."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "c1-bienal",
+      "tipo": "carrossel",
+      "titulo": "Bienal do Livro 2026",
+      "status": "arquivo",
+      "pasta": "carrossel-c1-bienal",
+      "notas": [
+        "Agosto, não está no grid. A Bienal já passou (4–13/09)."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "c2-sinais",
+      "tipo": "carrossel",
+      "titulo": "7 sinais de que você compra mais rápido do que lê",
+      "status": "arquivo",
+      "pasta": "carrossel-c2-sinais",
+      "notas": [
+        "Agosto, não está no grid. Incompleto (4 de 9 slides na pasta)."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "c6",
+      "tipo": "carrossel",
+      "titulo": "Catalogar a estante na mão?",
+      "status": "arquivo",
+      "pasta": "carrossel-c6",
+      "notas": [
+        "Agosto, não está no grid."
+      ],
+      "pendencias": []
+    }
+  ]
+}

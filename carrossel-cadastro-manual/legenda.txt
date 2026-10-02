@@ -1,0 +1,13 @@
+Buscou um livro e ele não apareceu? Agora você cria a ficha dele no Livra.
+
+Você digita título, autora e onde lê. Antes de criar, o app procura em 7 catálogos e nas fichas de outras leitoras, pra não duplicar. Capa, série e páginas são opcionais.
+
+O livro já entra na sua estante, e quem buscar depois acha a ficha que você criou.
+
+Também funciona pelo scanner: código de barras que não bate vira ficha, e o ISBN lido já vai junto.
+
+Já tá no uselivra.com. No app da loja, chega na próxima atualização.
+
+Qual livro você vai cadastrar primeiro? 👇
+
+#booktokbrasil #bookstagrambrasil #appdeleitura #leitura

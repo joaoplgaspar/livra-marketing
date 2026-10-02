@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Cinzel:wght@500;700&display=block" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000}
+.c{position:relative;width:600px;height:900px;overflow:hidden;display:flex;flex-direction:column;align-items:center;color:#e9d4a4;font-family:"Cormorant Garamond",serif}
+.v2{background:radial-gradient(ellipse at 50% 38%,#2b3a63 0%,#141c36 55%,#0a0f20 100%)}
+.v1{background:radial-gradient(ellipse at 50% 38%,#6b2436 0%,#3a1020 55%,#1d0710 100%)}
+.c::before{content:"";position:absolute;inset:22px;border:2px solid rgba(233,212,164,.55)}
+.c::after{content:"";position:absolute;inset:32px;border:1px solid rgba(233,212,164,.28)}
+.series{margin-top:82px;font-family:Cinzel,serif;font-size:22px;letter-spacing:.32em}
+.moons{margin-top:70px;display:flex;gap:16px;align-items:center}
+.m{width:34px;height:34px;border-radius:50%;background:#e9d4a4;position:relative;overflow:hidden}
+.m i{position:absolute;top:0;width:34px;height:34px;border-radius:50%}
+.v2 .m i{background:#18213e}.v1 .m i{background:#40121f}
+.moons .big{width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#f6e7c3,#d9bd80);box-shadow:0 0 60px rgba(233,212,164,.45)}
+h1{margin-top:74px;font-family:Cinzel,serif;font-weight:700;font-size:62px;line-height:1.08;text-align:center;letter-spacing:.04em;padding:0 60px}
+.orn{margin-top:30px;font-size:30px;letter-spacing:.5em}
+.au{position:absolute;bottom:80px;font-family:Cinzel,serif;font-size:28px;letter-spacing:.3em}
+</style></head><body>
+<div id="v2" class="c v2"><p class="series">CORTE LUNAR · II</p>
+<div class="moons"><span class="m"><i style="left:-12px"></i></span><span class="m"><i style="left:-22px"></i></span><span class="m"><i style="left:-30px"></i></span><span class="big"></span><span class="m"><i style="left:30px"></i></span><span class="m"><i style="left:22px"></i></span><span class="m"><i style="left:12px"></i></span></div>
+<h1>A Corte das Sete Luas</h1><p class="orn">✦ ✦ ✦</p><p class="au">M. CASTELLAN</p></div>
+<div id="v1" class="c v1"><p class="series">CORTE LUNAR · I</p>
+<div class="moons"><span class="big" style="width:140px;height:140px;background:#40121f;box-shadow:0 0 0 3px #e9d4a4,0 0 60px rgba(233,212,164,.35)"></span></div>
+<h1>O Pacto da Lua Nova</h1><p class="orn">✦ ✦ ✦</p><p class="au">M. CASTELLAN</p></div>
+</body></html>
