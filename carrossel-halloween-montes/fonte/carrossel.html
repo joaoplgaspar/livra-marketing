@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Halloween · Raphael Montes · carrossel</title>
+<link rel="stylesheet" href="file:///E:/Projetos/lura/.claude/skills/instagram-carousel/base.css">
+<!--
+  Carrossel "O autor de suspense que mais aparece nas estantes do Livra é brasileiro" · sáb 31/10/2026 · skill instagram-carousel, nível B.
+  Molde: ficha por livro com cor da capa (aprovado nos nacionais curtos, 29/10). Capa = régua de delegacia (não repete o leque de capas).
+  Dados e fontes em roteiro.md (catálogo do Livra lido em 30/10; "estantes" = globalReaderCount, não leitores).
+-->
+<style>
+  :root { --night: #0f0d0e; --night-2: #1d191b; --blood: #c8202b; --bone: #ede7dd; }
+  .slide.night { background: var(--night); color: var(--bone); }
+  .slide.bone  { background: var(--bone); color: var(--night); }
+  .slide.blood { background: var(--blood); color: #fff3ef; }
+  .night .serif { color: var(--blood); }
+  .bone .serif { color: var(--blood); }
+  .blood .serif { color: var(--night); }
+  .night .muted { color: rgba(237, 231, 221, .64); }
+  .bone .muted { color: rgba(15, 13, 14, .64); }
+  .night .hand { color: #e9c46a; }
+  .folio { opacity: .5; }
+
+  /* 1 — régua de altura de delegacia */
+  .c1 .ruler { position: absolute; inset: 0; z-index: 0; }
+  .c1 .ruler i { position: absolute; left: 0; right: 0; height: 3px; background: rgba(237, 231, 221, .1); }
+  .c1 .ruler i.major { height: 5px; background: rgba(237, 231, 221, .2); }
+  .c1 .ruler b { position: absolute; right: 96px; font-weight: 700; font-size: 34px; color: rgba(237, 231, 221, .42); letter-spacing: .02em; }
+  .c1 .h1, .c1 .note, .c1 .tag { position: relative; z-index: 1; }
+  .c1 .tag { display: inline-block; align-self: flex-start; padding: 14px 24px 12px; background: var(--bone); color: var(--night);
+             font-size: 36px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; transform: rotate(-2deg); }
+  .c1 .h1 { font-size: 88px; line-height: .98; max-width: 888px; letter-spacing: -.035em; }
+  .c1 .h1 .big { display: block; margin-top: 30px; font-size: 220px; line-height: .86; letter-spacing: -.05em; white-space: nowrap; }
+  .c1 .note { position: absolute; right: 96px; top: 210px; font-size: 80px; line-height: .9; text-align: right; transform: rotate(-6deg); }
+
+  /* 2 — barras */
+  .s2 .h1 { font-size: 150px; line-height: .9; }
+  .s2 .sub { margin-top: 30px; font-size: 54px; font-weight: 600; letter-spacing: -.02em; line-height: 1.1; max-width: 860px; }
+  .bars { margin-top: 80px; display: grid; gap: 26px; }
+  .bar { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .bar .lbl { display: flex; justify-content: space-between; font-size: 38px; font-weight: 700; letter-spacing: -.01em; }
+  .bar .fill { height: 46px; border-radius: 4px 10px 10px 4px; background: rgba(15, 13, 14, .22); }
+  .bar.me .fill { background: var(--blood); }
+  .bar.me .lbl { font-size: 46px; }
+  .s2 .src { margin-top: 44px; font-size: 32px; }
+
+  /* 3–7 — ficha por livro, cor da capa */
+  .slide.bk { background: var(--bg); color: var(--fg); }
+  .bk .hand.if { color: var(--ac); font-size: 88px; line-height: .9; transform: rotate(-2deg); transform-origin: left; max-width: 880px; }
+  .file { margin-top: 48px; display: flex; gap: 56px; align-items: flex-start; }
+  .cover { position: relative; display: block; flex: none; width: 400px; height: 600px; transform: rotate(-2.5deg);
+           box-shadow: 0 40px 70px -30px rgba(0,0,0,.75), 0 0 0 1px rgba(0,0,0,.2); }
+  .cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .meta { flex: 1; padding-top: 6px; }
+  .ttl { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 66px; line-height: 1; letter-spacing: -.03em; }
+  .rate { margin-top: 44px; font-size: 34px; font-weight: 600; line-height: 1.2; }
+  .rate b { display: block; font-size: 72px; font-weight: 800; letter-spacing: -.03em; line-height: 1; margin-bottom: 6px; }
+  .rate .star { color: var(--ac); }
+  .shelf { margin-top: 30px; font-size: 34px; font-weight: 600; line-height: 1.2; opacity: .78; }
+  .syn { margin-top: 64px; font-size: 48px; line-height: 1.24; letter-spacing: -.015em; font-weight: 500; max-width: 888px; }
+  .stamp { display: inline-block; margin-top: 30px; padding: 12px 22px 10px; border: 5px solid var(--ac); color: var(--ac); border-radius: 10px;
+           font-size: 34px; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; line-height: 1.15; transform: rotate(-3deg); }
+  .bk-jantar   { --bg: #e9e6e1; --fg: #17161a; --ac: #a3121c; }
+  .bk-suicidas { --bg: #3b1f66; --fg: #f3eefb; --ac: #ff5b5b; }
+  .bk-vilarejo { --bg: #29292b; --fg: #ece9e4; --ac: #e0444c; }
+  .bk-veronica { --bg: #7d0f14; --fg: #fde9e6; --ac: #ffb3ad; }
+  .bk-escuro   { --bg: #141116; --fg: #efe9f6; --ac: #f2a516; }
+
+  /* 8 */
+  .s8 .h1 { font-size: 140px; line-height: .92; }
+
+  /* 9 */
+  .s9 .h2 { font-size: 110px; line-height: .95; }
+  .row5 { margin-top: 90px; display: flex; gap: 22px; }
+  .row5 .cover { width: 160px; height: 240px; flex: none; }
+  .row5 .cover:nth-child(odd) { transform: rotate(-2deg); }
+  .row5 .cover:nth-child(even) { transform: rotate(2deg); }
+  .s9 .save { margin-top: 90px; font-size: 96px; white-space: nowrap; transform: rotate(-3deg); transform-origin: left; display: inline-block; }
+  .s9 .sig .logo { height: 44px; opacity: .85; }
+</style>
+</head>
+<body>
+<div class="strip">
+
+  <!-- 1 · gancho -->
+  <section class="slide night c1">
+    <div class="ruler" aria-hidden="true">
+      <i class="major" style="top:170px"></i><b style="top:122px">2,00</b>
+      <i style="top:300px"></i>
+      <i class="major" style="top:430px"></i><b style="top:382px">1,80</b>
+      <i style="top:560px"></i>
+      <i class="major" style="top:690px"></i>
+      <i style="top:820px"></i>
+      <i class="major" style="top:950px"></i>
+      <i style="top:1080px"></i>
+      <i class="major" style="top:1210px"></i>
+    </div>
+    <span class="tag">Suspeito nº 1</span>
+    <div class="spacer"></div>
+    <h1 class="h1">O autor de suspense que mais aparece nas estantes do Livra <span class="big serif">é brasileiro.</span></h1>
+    <p class="note hand">apropriado<br>pra hoje</p>
+  </section>
+
+  <!-- 2 · revelação + dado -->
+  <section class="slide bone s2">
+    <h1 class="h1 serif">Raphael Montes.</h1>
+    <p class="sub">Na frente de Freida McFadden e Stephen King.</p>
+    <div class="bars">
+      <div class="bar me"><p class="lbl"><span>Raphael Montes</span><span>168</span></p><div class="fill" style="width:100%"></div></div>
+      <div class="bar"><p class="lbl"><span>Freida McFadden</span><span>146</span></p><div class="fill" style="width:87%"></div></div>
+      <div class="bar"><p class="lbl"><span>Stephen King</span><span>85</span></p><div class="fill" style="width:51%"></div></div>
+      <div class="bar"><p class="lbl"><span>Riley Sager</span><span>54</span></p><div class="fill" style="width:32%"></div></div>
+      <div class="bar"><p class="lbl"><span>Agatha Christie</span><span>53</span></p><div class="fill" style="width:32%"></div></div>
+    </div>
+    <p class="src muted">Livros de cada autor nas estantes do Livra, em 30/10.</p>
+    <div class="folio"><span>por qual Raphael Montes começar</span></div>
+  </section>
+
+  <section class="slide bk bk-jantar">
+    <p class="hand if">Se você quer o que todo mundo tá lendo:</p>
+    <div class="file">
+      <span class="cover"><img src="capas/jantar-secreto.jpg" alt="Capa de Jantar Secreto"></span>
+      <div class="meta">
+        <p class="ttl">Jantar Secreto</p>
+        <p class="rate"><b><span class="star">★</span> 3,9</b>no Livra · 11 avaliações</p>
+        <p class="shelf">O dele que mais aparece nas estantes: 49.</p>
+      </div>
+    </div>
+    <p class="syn">Amigos de uma cidade pequena do Paraná vão morar no Rio e começam a organizar jantares secretos. O problema é o cardápio.</p>
+    <div class="folio"><span>por qual Raphael Montes começar</span></div>
+  </section>
+
+  <section class="slide bk bk-suicidas">
+    <p class="hand if">Se você quer o mais bem avaliado:</p>
+    <div class="file">
+      <span class="cover"><img src="capas/suicidas.jpg" alt="Capa de Suicidas"></span>
+      <div class="meta">
+        <p class="ttl">Suicidas</p>
+        <p class="rate"><b><span class="star">★</span> 4,8</b>no Livra · 5 avaliações</p>
+        <p class="shelf">O primeiro livro dele, de 2012.</p>
+      </div>
+    </div>
+    <p class="syn">Nove adolescentes morrem numa aparente roleta-russa. As mães leem as anotações de um deles para entender o que aconteceu.</p>
+    <div class="folio"><span>por qual Raphael Montes começar</span></div>
+  </section>
+
+  <section class="slide bk bk-vilarejo">
+    <p class="hand if">Se você tem medo de livro grosso:</p>
+    <div class="file">
+      <span class="cover"><img src="capas/o-vilarejo.jpg" alt="Capa de O vilarejo"></span>
+      <div class="meta">
+        <p class="ttl">O vilarejo</p>
+        <p class="rate"><b><span class="star">★</span> 3,8</b>no Livra · 7 avaliações</p>
+        <p class="shelf">O mais curto desta lista.</p>
+      </div>
+    </div>
+    <p class="syn">Sete histórias ligadas num vilarejo isolado no frio. Cada uma é um pecado capital, e cada pecado tem o seu demônio.</p>
+    <div class="folio"><span>por qual Raphael Montes começar</span></div>
+  </section>
+
+  <section class="slide bk bk-veronica">
+    <p class="hand if">Se você viu a série:</p>
+    <div class="file">
+      <span class="cover"><img src="capas/bom-dia-veronica.jpg" alt="Capa de Bom dia, Verônica"></span>
+      <div class="meta">
+        <p class="ttl">Bom dia, Verônica</p>
+        <p class="rate"><b><span class="star">★</span> 4,3</b>no Livra · 6 avaliações</p>
+        <p class="shelf">Escrito com a criminóloga Ilana Casoy.</p>
+      </div>
+    </div>
+    <p class="syn">Verônica trabalha na Delegacia de Homicídios de São Paulo e decide investigar por conta própria. Virou série da Netflix.</p>
+    <div class="folio"><span>por qual Raphael Montes começar</span></div>
+  </section>
+
+  <section class="slide bk bk-escuro">
+    <p class="hand if">Se você quer o premiado:</p>
+    <div class="file">
+      <span class="cover"><img src="capas/uma-mulher-no-escuro.jpg" alt="Capa de Uma mulher no escuro"></span>
+      <div class="meta">
+        <p class="ttl">Uma mulher no escuro</p>
+        <p class="rate"><b><span class="star">★</span> 3,8</b>no Livra · 3 avaliações</p>
+        <p class="stamp">Jabuti 2020</p>
+      </div>
+    </div>
+    <p class="syn">Victoria é a única sobrevivente de um crime de vinte anos atrás. Agora o assassino voltou.</p>
+    <div class="folio"><span>por qual Raphael Montes começar</span></div>
+  </section>
+
+  <!-- 8 · envio -->
+  <section class="slide blood s8">
+    <div class="spacer"></div>
+    <h1 class="h1">Manda pra quem acha que suspense bom <span class="serif">só vem traduzido.</span></h1>
+    <div class="folio"><span>por qual Raphael Montes começar</span></div>
+  </section>
+
+  <!-- 9 · pergunta + salva + assinatura -->
+  <section class="slide night s9">
+    <h2 class="h2">Qual foi o seu primeiro <span class="serif">Raphael Montes?</span></h2>
+    <div class="row5">
+      <span class="cover"><img src="capas/jantar-secreto.jpg" alt=""></span>
+      <span class="cover"><img src="capas/suicidas.jpg" alt=""></span>
+      <span class="cover"><img src="capas/o-vilarejo.jpg" alt=""></span>
+      <span class="cover"><img src="capas/bom-dia-veronica.jpg" alt=""></span>
+      <span class="cover"><img src="capas/uma-mulher-no-escuro.jpg" alt=""></span>
+    </div>
+    <p class="hand save">Salva pra escolher<br>o próximo.</p>
+    <div class="spacer"></div>
+    <div class="sig"><img class="logo" src="file:///E:/Projetos/lura/redesign-livra/logo/final/livra-assinatura-escuro.svg" alt="Livra"></div>
+  </section>
+
+</div>
+</body>
+</html>

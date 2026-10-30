@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>4 suspenses nacionais · carrossel</title>
+<link rel="stylesheet" href="file:///E:/Projetos/lura/.claude/skills/instagram-carousel/base.css">
+<!--
+  Teste cego 29/10/2026 · caminho 1 (skill instagram-carousel) · pauta B, nível B (Livra leve).
+  Formato: lista com capas reais (salvamento). Texto CONGELADO do roteiro b-suspense-nacional.md, só visual.
+  Toque do Livra = só as fontes (Bricolage + Fraunces itálico + letra de mão). Paleta própria do post:
+  noite fria + papel pardo de dossiê + carimbo vermelho (não é ink/paper/brand/marker do Livra).
+  Assinatura pequena só no último slide.
+  Fontes dos fatos: ver roteiro (Open Library para páginas, Apple Books para premissas e Jabuti).
+  Capas reais em ../../capas/ (Apple Books).
+-->
+<style>
+  :root {
+    --noir: #111417;
+    --noir-2: #1c2126;
+    --bone: #ebe6dc;
+    --kraft: #cdb48a;
+    --kraft-2: #bfa477;
+    --stamp: #b8321f;
+    --tape: rgba(236, 226, 196, .72);
+  }
+  .slide.noir  { background: var(--noir);  color: var(--bone); }
+  .slide.kraft { background: var(--kraft); color: var(--noir); }
+  .slide.bone  { background: var(--bone);  color: var(--noir); }
+  .noir .serif  { color: var(--kraft); }
+  .kraft .serif, .bone .serif { color: var(--stamp); }
+  .noir .muted  { color: rgba(235, 230, 220, .64); }
+  .kraft .muted, .bone .muted { color: rgba(17, 20, 23, .66); }
+  .noir .hand { color: var(--kraft); }
+  .kraft .hand, .bone .hand { color: var(--stamp); }
+  .folio { opacity: .5; }
+
+  /* capa real, presa com fita */
+  .cover { position: relative; display: block; box-shadow: 0 40px 70px -30px rgba(0, 0, 0, .7), 0 0 0 1px rgba(0,0,0,.2); }
+  .cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .cover::before { content: ""; position: absolute; z-index: 2; left: 50%; top: -26px; width: 190px; height: 56px; margin-left: -95px;
+                   background: var(--tape); transform: rotate(-4deg); box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+
+  /* 1 — capa: as 4 capas em leque saindo por baixo */
+  .c1 .h1 { font-size: 132px; line-height: .9; max-width: 900px; }
+  .c1 .h1 b { display: block; font-size: 300px; line-height: .78; letter-spacing: -.06em; color: var(--kraft); margin-bottom: 12px; }
+  .c1 .note { position: absolute; right: 90px; top: 150px; width: 420px; text-align: right; font-family: var(--hand); font-size: 84px;
+              line-height: .88; color: var(--kraft); transform: rotate(-6deg); }
+  .fan { position: absolute; left: 0; right: 0; bottom: -40px; height: 520px; }
+  .fan .cover { position: absolute; width: 320px; height: 480px; }
+  .fan .cover::before { display: none; }
+
+  /* 2 — tijolo riscado */
+  .s2 .h2 { font-size: 120px; }
+  .bricks { position: relative; margin: 100px 0 0; height: 340px; display: flex; align-items: flex-end; gap: 40px; }
+  .brick { position: relative; width: 520px; height: 300px; background: var(--noir-2); border-radius: 12px 18px 12px 16px;
+           box-shadow: inset -18px 0 0 rgba(255,255,255,.06), inset 0 -10px 0 rgba(0,0,0,.25); }
+  .brick.big::before, .brick.big::after { content: ""; position: absolute; left: -30px; right: -30px; top: 50%; height: 16px; margin-top: -8px;
+                                  background: var(--stamp); border-radius: 99px; }
+  .brick.big::before { transform: rotate(24deg); }
+  .brick.big::after { transform: rotate(-24deg); }
+  .thin { width: 64px; height: 290px; border-radius: 8px 8px 4px 4px; }
+  .s2 .body { margin-top: 110px; font-size: 72px; max-width: 860px; font-weight: 600; letter-spacing: -.025em; }
+
+  /* 3–6 — ficha de cada livro */
+  .file { display: flex; gap: 56px; align-items: flex-start; }
+  .file .cover { flex: none; width: 440px; height: 660px; transform: rotate(-2.5deg); margin-top: 20px; }
+  .file .meta { flex: 1; padding-top: 10px; }
+  .file .pg { font-size: 200px; line-height: .8; letter-spacing: -.06em; font-weight: 800; }
+  .file .pg small { display: block; margin-top: 18px; font-size: 40px; letter-spacing: -.01em; font-weight: 600; }
+  .file .ttl { margin-top: 70px; font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -.03em; }
+  .file .aut { margin-top: 22px; font-size: 34px; font-weight: 600; line-height: 1.15; }
+  .noir .file .pg { color: var(--kraft); }
+  .bone .file .pg { color: var(--stamp); }
+  .noir .file .ttl { color: var(--bone); }
+  .bone .file .ttl { color: var(--noir); }
+  .syn { margin-top: 76px; font-size: 48px; line-height: 1.24; letter-spacing: -.015em; font-weight: 500; max-width: 880px; }
+  .stamp { display: inline-block; margin-top: 30px; padding: 14px 26px 12px; border: 5px solid var(--stamp); color: var(--stamp); border-radius: 10px;
+           font-size: 36px; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; line-height: 1.15; transform: rotate(-3deg); }
+
+  .noir .stamp { color: #e4573d; border-color: #e4573d; }
+  /* 7 */
+  .s7 .h1 { font-size: 150px; line-height: .9; }
+  .s7 .h1 .strike::after { background: var(--stamp); height: .08em; }
+
+  /* 8 */
+  .s8 .h2 { font-size: 112px; }
+  .s8 .h2 + .h2 { margin-top: 30px; font-size: 76px; color: var(--kraft); }
+  .row4 { margin-top: 90px; display: flex; gap: 26px; }
+  .row4 .cover { width: 200px; height: 300px; }
+  .row4 .cover:nth-child(odd) { transform: rotate(-2deg); }
+  .row4 .cover:nth-child(even) { transform: rotate(2deg); }
+  .row4 .cover::before { width: 110px; height: 36px; margin-left: -55px; top: -16px; }
+  .s8 .save { margin-top: 70px; font-size: 92px; transform: rotate(-3deg); transform-origin: left; display: inline-block; }
+  .s8 .sig { display: flex; align-items: center; }
+  .s8 .sig .logo { height: 44px; opacity: .85; }
+</style>
+</head>
+<body>
+<div class="strip">
+
+  <!-- 1 · gancho -->
+  <section class="slide noir c1">
+    <h1 class="h1"><b>4</b>suspenses nacionais que acabam <span class="serif">num fim de semana</span></h1>
+    <p class="note">todos com menos de 280 páginas</p>
+    <div class="fan" data-bleed>
+      <span class="cover" style="left:30px;top:150px;transform:rotate(-11deg)"><img src="../../capas/borges.jpg" alt=""></span>
+      <span class="cover" style="left:260px;top:70px;transform:rotate(-4deg)"><img src="../../capas/silencio-da-chuva.jpg" alt=""></span>
+      <span class="cover" style="left:500px;top:80px;transform:rotate(4deg)"><img src="../../capas/mulher-no-escuro.jpg" alt=""></span>
+      <span class="cover" style="left:730px;top:170px;transform:rotate(11deg)"><img src="../../capas/dias-perfeitos.jpg" alt=""></span>
+    </div>
+  </section>
+
+  <!-- 2 · segundo gancho -->
+  <section class="slide kraft s2">
+    <h2 class="h2">Nada de <span class="serif">tijolo</span> de 600 páginas.</h2>
+    <div class="bricks">
+      <span class="brick big"></span>
+      <span class="brick thin" style="background:var(--noir)"></span>
+      <span class="brick thin" style="background:var(--stamp);height:210px"></span>
+      <span class="brick thin" style="background:var(--noir-2);height:260px"></span>
+    </div>
+    <p class="body">Começa sexta à noite, termina domingo antes do jantar.</p>
+    <div class="folio"><span>4 suspenses nacionais</span></div>
+  </section>
+
+  <!-- 3 · Borges -->
+  <section class="slide noir">
+    <div class="file">
+      <span class="cover"><img src="../../capas/borges.jpg" alt="Capa de Borges e os orangotangos eternos"></span>
+      <div class="meta">
+        <p class="pg">133<small>páginas</small></p>
+        <p class="ttl">Borges e os orangotangos eternos</p>
+        <p class="aut muted">Luis Fernando Verissimo</p>
+      </div>
+    </div>
+    <p class="syn">Um cinquentão que vive entre livros vai a um congresso sobre Edgar Allan Poe em Buenos Aires, conhece Jorge Luis Borges e acaba no meio de um crime.</p>
+    <div class="folio"><span>4 suspenses nacionais</span></div>
+  </section>
+
+  <!-- 4 · O silêncio da chuva -->
+  <section class="slide bone">
+    <div class="file">
+      <span class="cover"><img src="../../capas/silencio-da-chuva.jpg" alt="Capa de O silêncio da chuva"></span>
+      <div class="meta">
+        <p class="pg">262<small>páginas</small></p>
+        <p class="ttl">O silêncio da chuva</p>
+        <p class="aut muted">Luiz Alfredo Garcia-Roza</p>
+      </div>
+    </div>
+    <p class="syn">Um executivo aparece morto ao volante do próprio carro, no centro do Rio. Ninguém viu nada. O inspetor Espinosa começa a puxar o fio.</p>
+    <div class="folio"><span>4 suspenses nacionais</span></div>
+  </section>
+
+  <!-- 5 · Uma mulher no escuro -->
+  <section class="slide noir">
+    <div class="file">
+      <span class="cover"><img src="../../capas/mulher-no-escuro.jpg" alt="Capa de Uma mulher no escuro"></span>
+      <div class="meta">
+        <p class="pg">273<small>páginas</small></p>
+        <p class="ttl">Uma mulher no escuro</p>
+        <p class="aut muted">Raphael Montes</p>
+      </div>
+    </div>
+    <p class="syn">Victoria tinha quatro anos quando a família foi assassinada. Vinte anos depois, o assassino volta.<br><span class="stamp">Jabuti 2020 de romance<br>de entretenimento.</span></p>
+    <div class="folio"><span>4 suspenses nacionais</span></div>
+  </section>
+
+  <!-- 6 · Dias perfeitos -->
+  <section class="slide bone">
+    <div class="file">
+      <span class="cover"><img src="../../capas/dias-perfeitos.jpg" alt="Capa de Dias perfeitos"></span>
+      <div class="meta">
+        <p class="pg">274<small>páginas</small></p>
+        <p class="ttl">Dias perfeitos</p>
+        <p class="aut muted">Raphael Montes</p>
+      </div>
+    </div>
+    <p class="syn">Amor obsessivo e paranoico, do mesmo autor que criou Bom dia, Verônica. Sombrio e claustrofóbico.</p>
+    <div class="folio"><span>4 suspenses nacionais</span></div>
+  </section>
+
+  <!-- 7 · envio -->
+  <section class="slide kraft s7">
+    <div class="spacer"></div>
+    <h1 class="h1">Manda pra quem diz que não tem <span class="serif">tempo de ler.</span></h1>
+    <div class="folio"><span>4 suspenses nacionais</span></div>
+  </section>
+
+  <!-- 8 · pergunta + salva + assinatura pequena -->
+  <section class="slide noir s8">
+    <h2 class="h2">Qual você começa na <span class="serif">sexta?</span></h2>
+    <h2 class="h2">Responde com o número.</h2>
+    <div class="row4">
+      <span class="cover"><img src="../../capas/borges.jpg" alt=""></span>
+      <span class="cover"><img src="../../capas/silencio-da-chuva.jpg" alt=""></span>
+      <span class="cover"><img src="../../capas/mulher-no-escuro.jpg" alt=""></span>
+      <span class="cover"><img src="../../capas/dias-perfeitos.jpg" alt=""></span>
+    </div>
+    <p class="hand save">Salva pra quando o fim de semana chegar.</p>
+    <div class="spacer"></div>
+    <div class="sig"><img class="logo" src="file:///E:/Projetos/lura/redesign-livra/logo/final/livra-assinatura-escuro.svg" alt="Livra"></div>
+  </section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Red flags de quem lê</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=block">
+<style>
+/* Direção: o trocadilho vira objeto. "Red flag" é também o marcador
+   adesivo vermelho que leitor cola na página. Cada slide é uma página;
+   a cada red flag uma aba nova é colada mais abaixo e as anteriores ficam
+   na borda, então o carrossel "enche" de marcadores. Sem marca: Archivo
+   estreito (voz de post) + Newsreader itálico (a fala de quem lê). */
+:root{
+  --page:#f4f4f1; --ink:#1d1c1b; --red:#e1262d; --red-film:rgba(225,38,45,.14);
+  --sans:"Archivo",sans-serif; --serif:"Newsreader",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000}
+body{font-family:var(--sans);-webkit-font-smoothing:antialiased}
+p,h1,h2{text-wrap:pretty}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;padding:112px 104px;display:flex;flex-direction:column;background:var(--page);color:var(--ink)}
+.x{font-family:var(--sans);font-stretch:72%;font-weight:800;letter-spacing:-.015em;line-height:.96}
+.q{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;line-height:1.08}
+
+/* aba adesiva: película transparente sobre a página + ponta vermelha na borda */
+.flag{position:absolute;right:-6px;top:var(--y);height:108px;width:526px;display:flex;transform:rotate(-1.2deg);transform-origin:right center;filter:drop-shadow(0 3px 2px rgba(29,28,27,.16))}
+.flag::before{content:"";width:180px;background:var(--red-film);border:2px solid rgba(225,38,45,.26);border-right:0;border-radius:3px 0 0 3px}
+.flag b{flex:1;background:var(--red);color:#fff;display:flex;align-items:center;padding-left:36px;
+  font-family:var(--sans);font-stretch:72%;font-weight:800;font-size:48px;letter-spacing:.005em}
+.stub{position:absolute;right:-6px;top:var(--y);height:108px;width:92px;background:var(--red);transform:rotate(var(--r,0deg));transform-origin:right center;filter:drop-shadow(0 3px 2px rgba(29,28,27,.16))}
+.stub::before{content:"";position:absolute;right:100%;top:0;bottom:0;width:60px;background:var(--red-film);border:2px solid rgba(225,38,45,.26);border-right:0;border-radius:3px 0 0 3px}
+
+/* 1 */
+.s1 h1{font-size:200px;line-height:.86;letter-spacing:-.02em}
+.s1 .q{font-size:92px;margin-top:36px}
+.s1 .fan,.s9 .fan{position:absolute;right:0;bottom:120px;width:100%}
+.fan i{position:absolute;right:-6px;height:84px;background:var(--red);transform-origin:right center;filter:drop-shadow(0 3px 2px rgba(29,28,27,.16))}
+.fan i::before{content:"";position:absolute;right:100%;top:0;bottom:0;width:120px;background:var(--red-film);border:2px solid rgba(225,38,45,.26);border-right:0;border-radius:3px 0 0 3px}
+
+/* 2 */
+.s2{justify-content:center}
+.s2 p{font-size:104px}
+
+/* red flags: o texto começa logo abaixo da aba da vez */
+.rf .body{position:absolute;left:104px;right:104px;top:calc(var(--y) + 108px + 72px)}
+.rf .x{font-size:108px}
+.rf .q{font-size:92px;margin-top:40px}
+.rf .x + .x{margin-top:28px}
+
+/* 8 */
+.s8{background:var(--red);color:#fff;justify-content:flex-end}
+.s8 .x{font-size:120px}
+.s8 .q{font-size:84px;margin-top:40px}
+
+/* 9 */
+.s9 .x{font-size:124px}
+.s9 .fan{bottom:176px}
+.s9 .q{font-size:84px;margin-top:44px}
+.s9 .handle{margin-top:auto;font-family:var(--sans);font-weight:500;font-size:34px;letter-spacing:.01em;opacity:.55}
+</style>
+</head>
+<body>
+
+<section class="slide s1">
+  <h1 class="x">Red flags de quem lê</h1>
+  <p class="q">(a 4ª é você)</p>
+  <div class="fan" aria-hidden="true">
+    <i style="bottom:384px;width:250px;transform:rotate(1deg)"></i>
+    <i style="bottom:288px;width:290px;transform:rotate(-1.4deg)"></i>
+    <i style="bottom:192px;width:230px;transform:rotate(.6deg)"></i>
+    <i style="bottom:96px;width:470px;transform:rotate(-2.2deg)"></i>
+    <i style="bottom:0;width:270px;transform:rotate(.9deg)"></i>
+  </div>
+</section>
+
+<section class="slide s2">
+  <p class="x">Se você se reconhecer em 3 ou mais, o&nbsp;problema não é falta de tempo.</p>
+</section>
+
+<section class="slide rf" style="--y:120px">
+  <div class="flag"><b>Red flag 1</b></div>
+  <div class="body">
+    <p class="x">Compra livro novo com 47 na pilha.</p>
+    <p class="q">“Esse é diferente.”</p>
+  </div>
+</section>
+
+<section class="slide rf" style="--y:240px">
+  <div class="stub" style="--y:120px;--r:1deg"></div>
+  <div class="flag"><b>Red flag 2</b></div>
+  <div class="body">
+    <p class="x">Lê o final antes,</p>
+    <p class="q">“só pra ver se vale a pena”.</p>
+  </div>
+</section>
+
+<section class="slide rf" style="--y:360px">
+  <div class="stub" style="--y:120px;--r:1deg"></div>
+  <div class="stub" style="--y:240px;--r:-.8deg"></div>
+  <div class="flag"><b>Red flag 3</b></div>
+  <div class="body">
+    <p class="x">Fala “só mais um capítulo” à 1h da manhã.</p>
+    <p class="x">São 3h.</p>
+  </div>
+</section>
+
+<section class="slide rf" style="--y:480px">
+  <div class="stub" style="--y:120px;--r:1deg"></div>
+  <div class="stub" style="--y:240px;--r:-.8deg"></div>
+  <div class="stub" style="--y:360px;--r:1.4deg"></div>
+  <div class="flag"><b>Red flag 4</b></div>
+  <div class="body">
+    <p class="x">Empresta livro e anota mentalmente a data.</p>
+    <p class="q">E o estado da lombada.</p>
+  </div>
+</section>
+
+<section class="slide rf" style="--y:600px">
+  <div class="stub" style="--y:120px;--r:1deg"></div>
+  <div class="stub" style="--y:240px;--r:-.8deg"></div>
+  <div class="stub" style="--y:360px;--r:1.4deg"></div>
+  <div class="stub" style="--y:480px;--r:-.4deg"></div>
+  <div class="flag"><b>Red flag 5</b></div>
+  <div class="body">
+    <p class="x">Julga a pessoa pela estante antes de dizer oi.</p>
+  </div>
+</section>
+
+<section class="slide s8">
+  <p class="x">Manda pra pessoa que fez pelo menos&nbsp;4.</p>
+  <p class="q">Ela sabe quem é.</p>
+</section>
+
+<section class="slide s9">
+  <p class="x">Qual é a sua?<br>Comenta o&nbsp;número.</p>
+  <p class="q">Ninguém julga.<br>(Julga sim.)</p>
+  <div class="fan" aria-hidden="true">
+    <i style="bottom:384px;width:250px;transform:rotate(1deg)"></i>
+    <i style="bottom:288px;width:290px;transform:rotate(-1.4deg)"></i>
+    <i style="bottom:192px;width:230px;transform:rotate(.6deg)"></i>
+    <i style="bottom:96px;width:470px;transform:rotate(-2.2deg)"></i>
+    <i style="bottom:0;width:270px;transform:rotate(.9deg)"></i>
+  </div>
+  <p class="handle">@livraapp</p>
+</section>
+
+</body>
+</html>

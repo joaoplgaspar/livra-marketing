@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Red flags de quem lê · carrossel</title>
+<link rel="stylesheet" href="file:///E:/Projetos/lura/.claude/skills/instagram-carousel/base.css">
+<!--
+  Teste cego 29/10/2026 · caminho 1 (skill instagram-carousel) · pauta C, nível C (sem marca).
+  Formato: cena reconhecível / humor (envio por DM). Texto CONGELADO do roteiro c-red-flags.md, só visual.
+  Estética nativa: print do app de notas do celular (checklist, marca-texto, rabisco de caneta, modo escuro às 3h).
+  Nada da identidade do Livra: sem paleta, sem as 3 fontes (Inter no lugar da fonte do sistema), sem grão, sem logo.
+  Barra de cima e de baixo só com ícones (nenhuma palavra que não esteja no roteiro). "@livraapp" discreto só no 9.
+-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=block');
+  :root { --acc: #e3a700; --txt: #1c1c1e; --sub: #8e8e93; --hl: rgba(255, 204, 0, .42); }
+  .slide.note { background: #fff; color: var(--txt); font-family: "Inter", ui-sans-serif, sans-serif; padding: 200px 92px 230px; letter-spacing: -.02em; }
+  .slide.note.dark { background: #000; color: #f2f2f7; --txt: #f2f2f7; --hl: rgba(255, 204, 0, .5); }
+  .slide.note::after { display: none; } /* print de celular é liso: sem o grão do papel */
+
+  /* barra de cima: voltar · compartilhar · mais (só ícone) */
+  .top { position: absolute; left: 84px; right: 84px; top: 70px; display: flex; align-items: center; justify-content: space-between; }
+  .top .r { display: flex; gap: 46px; align-items: center; }
+  .top svg, .bar svg { display: block; stroke: var(--acc); fill: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+  /* barra de baixo: checklist · câmera · caneta · nova nota */
+  .bar { position: absolute; left: 92px; right: 92px; bottom: 78px; display: flex; justify-content: space-between; align-items: center; }
+
+  .t { font-size: 150px; line-height: .98; font-weight: 800; letter-spacing: -.045em; }
+  .p { font-size: 76px; line-height: 1.16; font-weight: 500; letter-spacing: -.03em; }
+  .p + .p { margin-top: 40px; }
+  .hl { background: var(--hl); border-radius: 6px; padding: 0 6px; margin: 0 -6px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .s { text-decoration: line-through; text-decoration-thickness: 6px; color: var(--sub); }
+  .caret { display: inline-block; width: 7px; height: .95em; background: var(--acc); vertical-align: -.12em; margin-left: 8px; border-radius: 3px; }
+
+  .h { font-size: 76px; font-weight: 800; letter-spacing: -.035em; }
+  .item { display: flex; gap: 34px; margin-top: 44px; }
+  .ck { flex: none; position: relative; width: 74px; height: 74px; margin-top: 20px; border-radius: 50%; background: var(--acc); }
+  .ck::after { content: ""; position: absolute; left: 26px; top: 13px; width: 18px; height: 36px; border: solid #fff; border-width: 0 7px 7px 0; transform: rotate(42deg); }
+  .ck.off { background: none; border: 5px solid #c7c7cc; }
+  .ck.off::after { display: none; }
+  .item .p { font-size: 92px; line-height: 1.14; }
+  .item .p + .p { margin-top: 30px; }
+
+  .dots { display: flex; gap: 26px; margin-top: 90px; }
+  .dots .ck { width: 96px; height: 96px; }
+  .dots .ck::after { left: 33px; top: 16px; width: 24px; height: 46px; border-width: 0 9px 9px 0; }
+
+  .draw { position: absolute; stroke: var(--txt); fill: none; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+
+  .big3 { white-space: nowrap; font-size: 210px; font-weight: 800; letter-spacing: -.06em; line-height: .9; margin-top: auto; margin-bottom: 20px; }
+  .tag { position: absolute; left: 92px; bottom: 190px; font-size: 34px; font-weight: 500; color: var(--sub); letter-spacing: -.01em; }
+</style>
+</head>
+<body>
+<div class="strip">
+
+  <!-- 1 · gancho -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <h1 class="t" style="font-size:196px">Red flags de quem lê</h1>
+    <p class="p" style="margin-top:70px;font-size:124px;font-weight:600"><span class="hl">(a 4ª é você)</span><span class="caret"></span></p>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 2 · segundo gancho -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <p class="p" style="font-size:106px;font-weight:600;line-height:1.1">Se você se reconhecer em <span class="hl">3 ou mais</span>, o problema não é falta de tempo.</p>
+    <div class="dots"><span class="ck"></span><span class="ck"></span><span class="ck"></span><span class="ck off"></span><span class="ck off"></span></div>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 3 · red flag 1 + rabisco da pilha -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <p class="h">Red flag 1:</p>
+    <div class="item"><span class="ck"></span><div><p class="p">Compra livro novo com 47 na pilha.</p><p class="p"><span class="hl">"Esse é diferente."</span></p></div></div>
+    <svg class="draw" style="left:540px;top:830px" width="420" height="330" viewBox="0 0 420 330">
+      <path d="M40 300 L382 296 L384 254 L44 258 Z"/><path d="M70 254 L360 250 L362 214 L68 218 Z"/><path d="M30 214 L390 206 L392 168 L34 176 Z"/>
+      <path d="M84 172 L334 166 L338 130 L82 136 Z"/><path d="M52 132 L372 120 L376 84 L56 94 Z"/><path d="M100 92 L326 84 L330 50 L102 58 Z"/>
+      <path d="M150 52 C 190 40, 250 40, 292 46 L 296 16 C 250 8, 190 10, 150 22 Z" stroke="#e3a700"/>
+    </svg>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 4 · red flag 2 -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <p class="h">Red flag 2:</p>
+    <div class="item"><span class="ck"></span><div><p class="p">Lê <span class="hl">o final</span> antes, "só pra ver se vale a pena".</p></div></div>
+    <svg class="draw" style="left:420px;top:760px" width="520" height="380" viewBox="0 0 520 380">
+      <path d="M40 60 C 120 40, 200 44, 260 70 C 320 44, 400 40, 480 60 L 480 330 C 400 310, 320 314, 260 340 C 200 314, 120 310, 40 330 Z"/>
+      <path d="M260 70 L 260 340"/>
+      <path d="M300 110 C 350 100, 400 100, 440 110 M 300 160 C 350 150, 400 150, 440 160 M 300 210 C 340 202, 370 202, 400 206"/>
+      <path d="M80 110 C 130 100, 180 100, 220 110 M 80 160 C 130 150, 180 150, 220 160 M 80 210 C 130 200, 180 200, 220 210 M 80 260 C 120 252, 160 252, 190 256"/>
+      <path d="M480 270 L 420 318 L 480 330" stroke="#e3a700"/>
+      <path d="M396 250 C 440 220, 520 240, 510 300 C 500 360, 400 366, 384 318 C 374 286, 392 262, 420 254" stroke="#e3a700"/>
+    </svg>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 5 · red flag 3, em modo escuro (são 3h) -->
+  <section class="slide note dark">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <p class="h">Red flag 3:</p>
+    <div class="item"><span class="ck"></span><div><p class="p">Fala "só mais um capítulo" à 1h da manhã.</p></div></div>
+    <p class="big3">São 3h.</p>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 6 · red flag 4 + rabisco da lombada -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <p class="h">Red flag 4:</p>
+    <div class="item"><span class="ck"></span><div><p class="p" style="font-size:86px">Empresta livro e<br>anota mentalmente<br>a data.</p><p class="p" style="font-size:86px">E o estado da <span class="hl">lombada.</span></p></div></div>
+    <svg class="draw" style="left:730px;top:930px" width="170" height="255" viewBox="0 0 200 300">
+      <path d="M52 20 C 90 14, 120 14, 150 20 L 152 282 C 120 288, 86 288, 50 282 Z"/>
+      <path d="M58 70 C 90 64, 118 64, 146 70"/><path d="M58 236 C 90 230, 118 230, 146 236"/>
+      <path d="M68 110 l 30 6 M 96 140 l 40 -4 M 72 168 l 34 8 M 102 196 l 30 -6" stroke="#e3a700"/>
+    </svg>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 7 · red flag 5 -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <p class="h">Red flag 5:</p>
+    <div class="item"><span class="ck"></span><div><p class="p">Julga a pessoa pela estante <span class="hl">antes de dizer oi.</span></p></div></div>
+    <svg class="draw" style="left:150px;top:820px" width="780" height="260" viewBox="0 0 780 260">
+      <path d="M10 240 C 260 236, 520 236, 770 242"/>
+      <path d="M40 236 L 42 70 L 92 70 L 92 236"/><path d="M98 236 L 100 40 L 140 40 L 140 236"/><path d="M146 236 L 148 96 L 214 96 L 214 236"/>
+      <path d="M222 236 L 300 74 L 340 92 L 266 236"/><path d="M360 236 L 360 54 L 404 54 L 406 236"/><path d="M412 236 L 414 110 L 470 110 L 470 236"/>
+      <path d="M560 236 L 562 30 L 612 30 L 614 236"/><path d="M620 236 L 620 80 L 684 80 L 686 236"/>
+      <path d="M352 30 C 370 22, 412 22, 424 34 M 470 82 C 492 70, 520 76, 528 92" stroke="#e3a700"/>
+    </svg>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 8 · envio -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <p class="p" style="font-size:124px;font-weight:700;line-height:1.06;letter-spacing:-.04em">Manda pra pessoa que fez pelo menos 4.</p>
+    <p class="p" style="margin-top:80px;font-size:124px;font-weight:700;letter-spacing:-.04em"><span class="hl">Ela sabe<br>quem é.</span></p>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+  <!-- 9 · pergunta + @ discreto -->
+  <section class="slide note">
+    <div class="top"><svg width="36" height="60" viewBox="0 0 36 60"><path d="M30 6 6 30l24 24"/></svg><div class="r"><svg width="48" height="60" viewBox="0 0 48 60"><path d="M24 4v34M12 16 24 4l12 12M8 26H4v30h40V26h-4"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><circle cx="16" cy="28" r="1.5" fill="#e3a700"/><circle cx="28" cy="28" r="1.5" fill="#e3a700"/><circle cx="40" cy="28" r="1.5" fill="#e3a700"/></svg></div></div>
+    <h2 class="t" style="font-size:170px">Qual é a sua?</h2>
+    <p class="p" style="margin-top:70px;font-size:96px">Comenta o número.</p>
+    <p class="p" style="font-size:96px"><span class="s">Ninguém julga.</span></p>
+    <p class="p" style="font-size:96px"><span class="hl">(Julga sim.)</span><span class="caret"></span></p>
+    <p class="tag">@livraapp</p>
+    <div class="bar"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="m17 29 8 8 15-17"/></svg><svg width="64" height="54" viewBox="0 0 64 54"><path d="M6 14h12l6-8h16l6 8h12v34H6z"/><circle cx="32" cy="30" r="10"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M8 48l6-18L38 6l12 12-24 24z M34 10l12 12"/></svg><svg width="56" height="56" viewBox="0 0 56 56"><path d="M30 8H8v40h40V26 M22 34l4-12L46 4l6 6-20 18z"/></svg></div>
+  </section>
+
+</div>
+</body>
+</html>

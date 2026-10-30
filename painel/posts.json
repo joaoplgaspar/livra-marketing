@@ -1,14 +1,15 @@
 {
-  "atualizado": "2026-10-01",
+  "atualizado": "2026-10-30",
   "semana": {
-    "id": "2026-W40",
-    "titulo": "Esquenta (qui 01 → dom 04) e semana 41 (05 → 11/10)",
+    "id": "2026-W41",
+    "titulo": "Semana 41 · 05 → 11/10 (e hoje, dom 04)",
     "plano": "calendario/2026-W41.md",
-    "ancora": "Temporada 1 da liga começa seg 05/10 (até 29/11)."
+    "ancora": "Temporada 1 começa amanhã (seg 05/10, até 29/11). Nada saiu desde o último story (fundador, 04/10)."
   },
   "decisoes": [
     "Pistas das conquistas secretas: o slide 8 da 1.11 prometeu \"nos próximos dias\" (público desde 28/09). No app 1.11 elas chegam sem cartão de desbloqueio (BUG-303, conserto no build 1.12). Soltar já ou segurar até o 1.12?",
-    "Verba dos Reels: quanto turbinar em cada um (ter 06 e sex 09). Comparar custo por seguidor com os Reels antigos."
+    "Verba dos Reels (seg 05 Temporada e ter 06 Lura EP. 1): quanto turbinar em cada um.",
+    "EP. 1 da Lura: aparecer de rosto ou só mãos/POV? A regra da marca é sem rosto e sem nome do fundador; o roteiro funciona dos dois jeitos."
   ],
   "aprendizados": [
     "~200 dos 222 seguidores vieram de Reels turbinados (fundador, 30/09). Reel = aquisição; carrossel = salvamento e quem já usa.",
@@ -17,11 +18,340 @@
   ],
   "posts": [
     {
+      "id": "novidades-1-13",
+      "tipo": "carrossel",
+      "titulo": "Novidades da 1.13: lugar pra quem escreve",
+      "data": "2026-10-30",
+      "hora": "18:00",
+      "status": "pronto",
+      "pasta": "carrossel-novidades-1-13",
+      "legenda": "legenda.txt",
+      "fonte": "livra-marketing/carrossel-novidades-1-13/fonte/carrossel.html",
+      "meta": "quem já usa (atualizar) + alcance da novidade",
+      "notas": [
+        "Pedido do fundador em 30/10: carrossel para hoje. App Store 1.13 publicada 30/10 13:45Z; Play 1.13 desde 26/10.",
+        "Prints REAIS: harnesses da própria 1.13 (worktree lura-a1c = código de 13bf0216), dados fictícios. Autores = frames \"-real\" (vit-real-busca, real-a1b-autor, ed-real-hub-lancamentos, real-perfil-visitante); os \"hoje-*\" eram a 1ª versão e foram trocados a pedido do fundador (30/10).",
+        "Texto das notas da loja 1.13. Mascote: PRO na 1.13 (o binário tem a trava de 16/10; a web vende sem PRO desde 24/10).",
+        "Versão TikTok em tiktok/ (1080×1920, legenda-tiktok.txt).",
+        "10 slides: entrou um slide de lançamentos (seguir editora, aviso às sextas, \"me avise\"). Frames card-real-* têm a foto real do Raphael Montes: não usar.",
+        "Aprovado pelo fundador em 30/10 (versão com as telas atuais de autores)."
+      ],
+      "pendencias": [
+        "Postar hoje (30/10), Instagram e TikTok.",
+        "Mascote sem print: o harness da 1.13 não desenha o bicho.",
+        "TikTok: escolher o som no app e conferir os botões no rascunho."
+      ]
+    },
+    {
+      "id": "halloween-raphael-montes",
+      "tipo": "carrossel",
+      "titulo": "Halloween: o suspense que mais aparece nas estantes do Livra é brasileiro",
+      "data": "2026-10-31",
+      "hora": "12:00",
+      "status": "pronto",
+      "pasta": "carrossel-halloween-montes",
+      "legenda": "legenda.txt",
+      "fonte": "livra-marketing/carrossel-halloween-montes/fonte/carrossel.html",
+      "meta": "salvamento + envio (dado do Livra + lista)",
+      "notas": [
+        "Feito em 30/10 a pedido do fundador. Dados e fontes em fonte/roteiro.md.",
+        "\"Estantes\" = globalReaderCount (quem adicionou o livro, qualquer status), não leitores. Por estantes Montes 168 > McFadden 146; por concluídos McFadden 93 > Montes 83. Por isso o gancho diz \"mais aparece nas estantes\", nunca \"mais lido\".",
+        "Capa: régua de altura de delegacia (não repete o leque dos nacionais curtos). Uma ficha por livro com a cor da capa, no formato \"se você quer…\".",
+        "Aprovado pelo fundador em 30/10. Versão TikTok em tiktok/ (1080×1920, legenda-tiktok.txt). A capa troca o gancho por \"Por qual livro começar a ler Raphael Montes\" (busca no TikTok; quem não conhece o Livra), e o dado das estantes vai pro slide 2.",
+        "Aprovado pelo fundador em 30/10. Versão TikTok Photo Mode em tiktok/ (1080×1920, legenda-tiktok.txt); fonte em fonte/tiktok/carrossel.html. Zonas livres conferidas por sobreposição (topo 250, direita 180, base 520).",
+        "Capa do TikTok troca o gancho por \"Por qual livro começar a ler Raphael Montes\" (busca pelo nome; quem não segue não conhece o Livra). O dado das estantes fica no slide 2."
+      ],
+      "pendencias": [
+        "Postar sáb 31/10 (Instagram e TikTok).",
+        "TikTok: escolher um som em alta no app e conferir no rascunho se os botões da direita cobrem algum texto.",
+        "Reel de Halloween (só roteiro): sugestão de arquivar.",
+        "Reconferir as notas no app no dia.",
+        "TikTok: escolher um som em alta no app e conferir no rascunho se os botões cobrem algum texto."
+      ]
+    },
+    {
+      "id": "red-flags-de-quem-le",
+      "tipo": "carrossel",
+      "titulo": "Red flags de quem lê",
+      "data": "2026-11-09",
+      "hora": "12:00",
+      "status": "aprovar",
+      "pasta": "carrossel-red-flags",
+      "legenda": "legenda.txt",
+      "fonte": "livra-marketing/teste-skills-2026-10/caminho-1/c-red-flags/carrossel.html",
+      "meta": "envio por DM (pilar 1, sem marca)",
+      "notas": [
+        "Versão Y do teste cego de 29/10 (skill instagram-carousel), escolhida pelo fundador; a Z (canvas-design) também agradou.",
+        "Nível C: estética de app de notas, só @livraapp discreto no último slide. Humor de observação, sem fatos a conferir.",
+        "Seg 02/11 ficou com a retrospectiva de outubro (fundador, 29/10); este passou para seg 09/11."
+      ],
+      "pendencias": [
+        "Postar e anotar os números de 48h."
+      ]
+    },
+    {
+      "id": "nacionais-curtos",
+      "tipo": "carrossel",
+      "titulo": "4 nacionais curtos que quem usa o Livra adorou",
+      "data": "2026-11-04",
+      "hora": "12:00",
+      "status": "aprovar",
+      "pasta": "carrossel-nacionais-curtos",
+      "legenda": "legenda.txt",
+      "fonte": "livra-marketing/carrossel-nacionais-curtos/fonte/carrossel.html",
+      "meta": "salvamento (pilar 3, Livra leve)",
+      "notas": [
+        "Substitui o carrossel de suspense nacional do teste (fundador, 29/10): suspense nacional curto e bem avaliado não existe no catálogo.",
+        "Notas, avaliações e páginas lidas do catálogo do Livra em 29/10 (ficha principal de cada livro). Fontes de autoras e premissas em fonte/roteiro.md.",
+        "Cor de cada slide tirada da capa; livros numerados 1 a 4.",
+        "Versão TikTok Photo Mode em tiktok/ (1080×1920, capa sem a marca, legenda-tiktok.txt). Fonte: fonte/tiktok/carrossel.html."
+      ],
+      "pendencias": [
+        "No dia: reconferir as notas no app (mudam com novas avaliações).",
+        "Capa no mesmo molde do suspense descartado: não repetir esse molde nos próximos 2 posts.",
+        "TikTok: escolher um som em alta no app e conferir no rascunho se os botões da direita cobrem algum texto. Expectativa baixa: vídeo rende cerca de 5× mais que foto lá (Metricool, mai/2026)."
+      ]
+    },
+    {
+      "id": "releitura-conta-na-meta",
+      "tipo": "carrossel",
+      "titulo": "Releitura conta na meta. Sim.",
+      "data": "2026-11-06",
+      "hora": "12:00",
+      "status": "aprovar",
+      "pasta": "carrossel-releitura",
+      "legenda": "legenda.txt",
+      "fonte": "livra-marketing/teste-skills-2026-10/caminho-2/_trabalho/a_releitura.py",
+      "meta": "comentário (pilar 4, Livra completo)",
+      "notas": [
+        "Versão Y do teste cego de 29/10 (canvas-design + theme-factory), escolhida pelo fundador.",
+        "Rodada 2: saiu a nota \"pode brigar nos comentários\" (vetada); slide 2 no molde do X (frontend-design).",
+        "Ponte conferida no código: releitura entra no contador de leituras ao terminar (RereadConfirmModal, UserStats.totalReads)."
+      ],
+      "pendencias": [
+        "Capa escura como a de quarta: conferir o grid antes de postar.",
+        "Postar e anotar os números de 48h."
+      ]
+    },
+    {
+      "id": "classicos-curtos",
+      "tipo": "carrossel",
+      "titulo": "Clássicos com menos de 150 páginas",
+      "data": "2026-11-11",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "salvamento (lista com capas)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "Catálogo em 30/10: A Metamorfose 4,47 (17 notas, 29 leitores), O Pequeno Príncipe 4,55 (10 notas, 27 leitores). Completar com clássicos curtos que tenham nota na ficha principal.",
+        "TikTok: \"livros curtos pra pagar de cult\" 7,5 mil curtidas; Kafka/curtos 28,7 mil."
+      ],
+      "pendencias": [
+        "Puxar a lista do catálogo (páginas em book_meta.totalPages, nota na ficha principal).",
+        "Capa fora do molde dos nacionais curtos."
+      ]
+    },
+    {
+      "id": "audiolivro-conta",
+      "tipo": "carrossel",
+      "titulo": "Audiolivro conta como ler.",
+      "data": "2026-11-13",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "comentário (opinião que divide)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "Mesmo molde de argumento da releitura (06/11), mas capa diferente.",
+        "TikTok: opinião impopular só rende quando é concreta; posts genéricos ficam em dezenas de curtidas."
+      ],
+      "pendencias": [
+        "Fonte para os argumentos (estudos de compreensão em áudio x texto) antes do roteiro.",
+        "Conferir no código se o app registra audiolivro (formato) antes de qualquer ponte com o produto."
+      ]
+    },
+    {
+      "id": "consciencia-negra",
+      "tipo": "carrossel",
+      "titulo": "Autores negros brasileiros bem avaliados no Livra",
+      "data": "2026-11-18",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "salvamento + envio (data: 20/11)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "Catálogo em 30/10: Quarto de despejo 5,0 (2 notas, 11 leitores) · Canção para ninar menino grande 5,0 (3) · O avesso da pele 5,0 (1) · Torto arado · Úrsula, de Maria Firmina dos Reis (1859), 4,5 (2) · Dom Casmurro 4,33 (6, Machado).",
+        "Torto arado e O avesso da pele têm fichas duplicadas com notas separadas (problema já no BACKLOG §8): usar só a ficha principal.",
+        "Postar antes do feriado (20/11 cai numa sexta)."
+      ],
+      "pendencias": [
+        "Notas com poucas avaliações: decidir o piso antes de montar (o ranking semanal usa nota só com ≥ 5; nos nacionais curtos você aprovou com 3–7) e mostrar o nº de notas no slide.",
+        "Fonte para cada fato biográfico (ex.: Úrsula como primeiro romance de autora negra no Brasil)."
+      ]
+    },
+    {
+      "id": "black-friday-sinais",
+      "tipo": "carrossel",
+      "titulo": "Black Friday: 7 sinais de que você compra mais rápido do que lê",
+      "data": "2026-11-23",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "envio (cena reconhecível)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "Reaproveita o c2-sinais de agosto (arquivo, 4 de 9 slides em carrossel-c2-sinais).",
+        "Black Friday: 27/11."
+      ],
+      "pendencias": [
+        "Reescrever na voz atual e terminar os 9 slides.",
+        "Ponte honesta com o produto (Quero ler / estante), se houver, só no último slide."
+      ]
+    },
+    {
+      "id": "famosinhos-nao-amou",
+      "tipo": "carrossel",
+      "titulo": "Famosinhos que quem usa o Livra não amou",
+      "data": "2026-11-25",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "comentário (opinião com dado do Livra)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "Catálogo em 30/10 (ficha principal): Nunca minta 3,23 (13 notas, 38 leitores) · Os dois morrem no final 3,3 (5) · Casas estranhas 3,5 (7) · Não é como nos filmes 3,67 (3).",
+        "Fora: Noites brancas (notas divididas em 5 fichas duplicadas).",
+        "TikTok: \"concorda ou discorda\" sobre famosinhos chega a 5,8 mil curtidas."
+      ],
+      "pendencias": [
+        "Notas com poucas avaliações: decidir o piso antes de montar (o ranking semanal usa nota só com ≥ 5; nos nacionais curtos você aprovou com 3–7) e mostrar o nº de notas no slide.",
+        "Reconferir as notas no dia.",
+        "Tom: o que as pessoas acharam, sem atacar autor."
+      ]
+    },
+    {
+      "id": "meta-da-tempo",
+      "tipo": "carrossel",
+      "titulo": "Ainda dá pra bater a meta do ano?",
+      "data": "2026-11-27",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "salvamento (achado útil)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "Continua o \"12 páginas por dia\" (postado 08/10): conta de páginas por dia para os livros que faltam até 31/12.",
+        "Tabela: faltam 2, 4, 6 livros × páginas médias → páginas/dia."
+      ],
+      "pendencias": [
+        "Conferir no código o que o app mostra de meta anual antes da ponte com o produto."
+      ]
+    },
+    {
+      "id": "livros-pra-ler-quando",
+      "tipo": "carrossel",
+      "titulo": "Livros pra ler quando…",
+      "data": "2026-12-02",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "salvamento + envio (formato que mais rende no TikTok)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "TikTok Foto em 30/10: \"livros pra cada sensação\" 32,8 mil, \"livros para ler quando\" 101 mil curtidas.",
+        "Situações: ressaca literária, só tem 1 hora, quer chorar, quer não largar. Só livro com nota na ficha principal."
+      ],
+      "pendencias": [
+        "Versão TikTok com foto real dos livros (pedir ao fundador)."
+      ]
+    },
+    {
+      "id": "presente-por-pessoa",
+      "tipo": "carrossel",
+      "titulo": "Que livro dar de presente para cada tipo de pessoa",
+      "data": "2026-12-09",
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "envio (Natal)",
+      "notas": [
+        "Pauta de 30/10 (busca no TikTok Foto + catálogo do Livra, só leitura). Data é sugestão.",
+        "Lista de Natal: um livro por tipo de pessoa, todos do catálogo com nota.",
+        "Não confundir com \"tipos de leitor\" (saturado no TikTok, quase tudo abaixo de 100 curtidas): aqui o foco é quem ganha o presente."
+      ],
+      "pendencias": [
+        "Notas com poucas avaliações: decidir o piso antes de montar (o ranking semanal usa nota só com ≥ 5; nos nacionais curtos você aprovou com 3–7) e mostrar o nº de notas no slide."
+      ]
+    },
+    {
+      "id": "jabuti-2026",
+      "tipo": "carrossel",
+      "titulo": "Um perfil de livros do Instagram ganhou um Jabuti",
+      "data": "2026-11-01",
+      "hora": "12:00",
+      "status": "pronto",
+      "meta": "salvamento + envio (notícia + lista)",
+      "notas": [
+        "Pauta de 30/10. Vencedores do 68º Jabuti (27/10, PublishNews): Livro do Ano = Trincheira tropical, de Ruy Castro · Romance Literário = Meridiana, de Eliana Alves Cruz · Romance de Entretenimento = Cartografia para caminhos incertos, de Ian Fraser · Estreia em Romance = Pitangas verdes, de Mariana Lobato Botter · Conto = Massaranduba, de Abáz · Poesia = Boris e Marina, de Alberto Martins · Juvenil = A única da sala, de Tathyana Viana · Incentivo à Leitura – Cultura Digital (categoria nova) = Pedro Pacífico (@bookster).",
+        "Catálogo em 30/10: Meridiana tem 6 leitores e nota 3,5 (2 notas). Trincheira tropical, Pitangas verdes e Massaranduba não têm ficha.",
+        "Feito em 30/10. Fontes em fonte/roteiro.md. Cartografia tem ficha no Livra (4,83, 3 avaliações); Meridiana 3,5 (2).",
+        "Voto do público: as fontes divergem se escolheu os finalistas ou o vencedor, por isso o post diz só \"com voto do público\".",
+        "Capa: recorte de jornal genérico, sem nome de jornal.",
+        "Aprovado pelo fundador em 30/10. Versão TikTok em tiktok/ (1080×1920, legenda-tiktok.txt, sem @ porque o Bookster pode ter outro @ no TikTok).",
+        "Aprovado pelo fundador em 30/10. Versão TikTok Photo Mode em tiktok/ (1080×1920, legenda-tiktok.txt); fonte em fonte/tiktok/carrossel.html. Zonas livres conferidas por sobreposição (topo 250, direita 180, base 520).",
+        "Legenda do TikTok cita \"Pedro Pacífico, o Bookster\" sem @ (o @bookster é do Instagram)."
+      ],
+      "pendencias": [
+        "Postar dom 01/11 (Instagram e TikTok), enquanto a notícia é recente.",
+        "Legenda do Instagram marca o @bookster (ele recebe notificação): manter ou tirar é decisão sua.",
+        "TikTok: escolher um som em alta no app e conferir no rascunho se os botões da direita cobrem algum texto.",
+        "TikTok: escolher um som em alta no app e conferir no rascunho se os botões cobrem algum texto."
+      ],
+      "pasta": "carrossel-jabuti-2026",
+      "legenda": "legenda.txt",
+      "fonte": "livra-marketing/carrossel-jabuti-2026/fonte/carrossel.html"
+    },
+    {
+      "id": "reel-temporada",
+      "tipo": "reel",
+      "titulo": "Reel: a liga zerou (Temporada 1)",
+      "data": "2026-10-05",
+      "status": "postado",
+      "pasta": "reel-temporada",
+      "capa": "1-capa.png",
+      "legenda": "legenda.txt",
+      "fonte": "livra-video/src/Temporada.tsx (Remotion)",
+      "meta": "alcance (turbinar)",
+      "notas": [
+        "Postado seg 05/10 (dia de abertura da Temporada 1).",
+        "v5: voz do fundador limpa, música \"In Dreamland\" com fade out; 46,8 s.",
+        "Legendas por plataforma em legendas-plataformas.md.",
+        "48h (qua 07): anotar visualizações, % de não seguidores, envios, salvamentos, seguidores novos e custo por seguidor se turbinado."
+      ],
+      "pendencias": []
+    },
+    {
+      "id": "reel-lura-ep1",
+      "tipo": "reel",
+      "titulo": "Reel: a Lura escolheu, eu comprei · EP. 1",
+      "data": "2026-10-06",
+      "hora": "20:00",
+      "status": "aprovar",
+      "pasta": "reel-lura-ep1",
+      "roteiro": "roteiro.md",
+      "meta": "alcance (turbinar) · série",
+      "notas": [
+        "v3 (05/10): voz limpa, música \"torii\" por baixo; abertura com os clipes em cartões animados; 34 s.",
+        "O motivo no cartão é o texto real da Lura (conta @livraapp). Nota da comunidade relida no dia da postagem.",
+        "IMG_0295 usado só até 2,2 s (depois aparece o rosto de outra pessoa)."
+      ],
+      "pendencias": [
+        "Aprovar o vídeo.",
+        "Postar ter 06, 20h."
+      ],
+      "legenda": "legenda.txt",
+      "capa": "1-capa.png"
+    },
+    {
       "id": "story-lua-sol",
       "tipo": "story",
       "titulo": "Story: Lua e Sol na Loja",
       "data": "2026-10-01",
-      "status": "pronto",
+      "status": "confirmar",
       "pasta": "stories-semana/qui-01-lua-e-sol",
       "capa": "1-story.png",
       "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
@@ -33,8 +363,7 @@
         "Vídeo de 10,5 s sem som: a música entra no Instagram."
       ],
       "pendencias": [
-        "Postar o vídeo (ou a imagem) e pôr uma música.",
-        "Opcional: adesivo de link pra loja do app."
+        "Confirmar se este foi o último story que saiu (01/10)."
       ]
     },
     {
@@ -42,25 +371,23 @@
       "tipo": "story",
       "titulo": "Story: segunda a liga zera",
       "data": "2026-10-02",
-      "status": "pronto",
+      "status": "arquivo",
       "pasta": "stories-semana/sex-02-contagem-temporada",
       "capa": "1-story.png",
       "fonte": "lura/marketing/instagram/2026-10-stories-semana/stories.html",
       "meta": "adesivo: contagem regressiva",
       "notas": [
         "Junto: repost do carrossel da Regra dos 50 (compartilhar o post no story).",
-        "Vídeo de 6 s sem som: a música entra no Instagram."
+        "Vídeo de 6 s sem som: a música entra no Instagram.",
+        "Não saiu: a data (sex 02) passou."
       ],
-      "pendencias": [
-        "Colar o adesivo de CONTAGEM REGRESSIVA no espaço vazio (ver o guia): \"Temporada 1\", 05/10 00h.",
-        "Pôr música e postar."
-      ]
+      "pendencias": []
     },
     {
       "id": "story-enquete",
       "tipo": "story",
       "titulo": "Story: você tá em qual liga?",
-      "data": "2026-10-03",
+      "data": "2026-10-04",
       "status": "pronto",
       "pasta": "stories-semana/sab-03-enquete-liga",
       "capa": "1-story.png",
@@ -68,7 +395,8 @@
       "meta": "adesivo: enquete",
       "notas": [
         "Junto, às 20h: repost do Reel \"segunda a liga muda\".",
-        "Vídeo de 6 s sem som: a música entra no Instagram."
+        "Vídeo de 6 s sem som: a música entra no Instagram.",
+        "Remarcado pra hoje (dom 04)."
       ],
       "pendencias": [
         "Colar o adesivo de ENQUETE no espaço vazio: Bronze · Prata · Ouro · Diamante.",
@@ -106,7 +434,8 @@
       "meta": "só imagem/vídeo",
       "notas": [
         "Junto: repost do carrossel da Temporada 1.",
-        "Vídeo de 6 s sem som: a música entra no Instagram."
+        "Vídeo de 6 s sem som: a música entra no Instagram.",
+        "Postar junto/compartilhar o Reel da Temporada no story."
       ],
       "pendencias": [
         "Pôr música e postar; depois compartilhar o carrossel no story."
@@ -153,28 +482,24 @@
       "id": "reel-temporada-esquenta",
       "tipo": "reel",
       "titulo": "Segunda a liga muda",
-      "data": "2026-10-03",
-      "hora": "20:00",
-      "status": "material",
+      "status": "arquivo",
       "pasta": "reel-temporada-esquenta",
       "roteiro": "roteiro.md",
       "meta": "alcance (turbinar) + aviso do reset",
       "notas": [
         "Devlog do porquê da temporada: o Diamante era beco (não sobe).",
         "Avisa antes que todo mundo desce uma liga no fim (recomendação do estudo da liga).",
-        "Prints reais da 1.11 no estado de antes de 05/10 + clipe da escada."
+        "Prints reais da 1.11 no estado de antes de 05/10 + clipe da escada.",
+        "Não saiu; absorvido pelo Reel da Temporada de seg 05 (04/10)."
       ],
-      "pendencias": [
-        "Narrar e montar (não há tela pra gravar).",
-        "Decidir verba."
-      ],
+      "pendencias": [],
       "capa": "material/escada-1-teto.png"
     },
     {
       "id": "temporada-1",
       "tipo": "carrossel",
       "titulo": "A liga zerou. Temporada 1",
-      "data": "2026-10-05",
+      "data": "2026-10-19",
       "hora": "12:00",
       "status": "aprovar",
       "pasta": "carrossel-temporada-1",
@@ -185,10 +510,13 @@
         "Prints reais da 1.11 (só recortes sem data).",
         "Prêmios, 40 dias, 50.000 páginas e pontos conferidos no código em 30/09; coleção seasons vazia em prod (sem override).",
         "Já é PRO e fecha os 40 dias → os 14 dias viram presente.",
-        "Capa nova 01/10: terracota com os 8 domingos."
+        "Capa nova 01/10: terracota com os 8 domingos.",
+        "Movido pra qua 07 (04/10): o lançamento é o Reel de segunda; o carrossel é o detalhe pra salvar.",
+        "06/10: sai da qua 07 (entra a 1.12) e vira o post da Temporada na série de mecânicas, seg 12 (semana 2 de 8)."
       ],
       "pendencias": [
-        "Aprovar a folha.",
+        "Trocar os recortes da 1.11 pela aba nova \"Trilha\" da 1.12 (prints/temporada-ler.png das lojas): domingos, Hoje, quanto falta pra cada prêmio.",
+        "Aprovar a folha nova.",
         "No dia: reconferir os números dos prêmios no código."
       ]
     },
@@ -196,9 +524,7 @@
       "id": "reel-cor-da-capa",
       "tipo": "reel",
       "titulo": "O app errou a cor desse livro",
-      "data": "2026-10-06",
-      "hora": "20:00",
-      "status": "material",
+      "status": "reserva",
       "pasta": "reel-cor-da-capa",
       "roteiro": "roteiro.md",
       "meta": "alcance (turbinar)",
@@ -217,7 +543,7 @@
       "id": "regra-dos-50",
       "tipo": "carrossel",
       "titulo": "Regra dos 50",
-      "data": "2026-10-02",
+      "data": "2026-10-16",
       "hora": "12:00",
       "status": "pronto",
       "pasta": "carrossel-regra-dos-50",
@@ -227,7 +553,8 @@
       "notas": [
         "Pronto desde 24/09 e nunca postado (não aparece no grid em 30/09).",
         "Ponte: flair \"Larguei Sem Culpa\" (loja, 400 moedas).",
-        "Antecipado para o esquenta (01/10): era qua 07."
+        "Antecipado para o esquenta (01/10): era qua 07.",
+        "Não saiu na sex 02; remarcado pra qui 08."
       ],
       "pendencias": [
         "Reconferir que o flair segue na Loja."
@@ -236,22 +563,22 @@
     {
       "id": "reel-clube-do-livro",
       "tipo": "reel",
-      "titulo": "Vocês transformaram minha liga em clube",
-      "data": "2026-10-09",
-      "hora": "20:00",
+      "titulo": "Destruíram o meu aplicativo (clube do livro)",
       "status": "material",
       "pasta": "reel-clube-do-livro",
       "roteiro": "roteiro.md",
-      "meta": "alcance + teste de interesse",
+      "meta": "alcance (turbinar) + conversão PRO",
       "notas": [
-        "Existe: liga privada, convite por código; convite por link só na web.",
-        "Pote, roleta e progresso = mock aprovado, com selo EM CONSTRUÇÃO em tudo.",
-        "Não mostrar nome real de liga, quem criou nem quantas ligas existem."
+        "Roteiro v4 (07/10): gancho em mistério (\"Destruíram o meu aplicativo. E eu sei exatamente quem foi.\") + take real da Vitória dizendo \"Fui eu.\" A história segue a fala do fundador.",
+        "Clube no ar na web desde 06/10 07:20Z; no app só com a 1.12 → postar depois da 1.12 nas lojas.",
+        "Roteiro antigo (\"vocês transformaram minha liga\", com selo em construção) arquivado em roteiro-v1-01-10-em-construcao.md.",
+        "Não mostrar nome real de liga nem de quem participa; nome da namorada só com o ok dela."
       ],
       "pendencias": [
-        "Gravar liga privada real na @livraapp (borrar nomes de pessoas).",
-        "Narrar, montar, decidir verba.",
-        "48h: comentários com \"clube\" ÷ alcance."
+        "Gravar o take da Vitória (3 jeitos, 3–5 s, vertical) e confirmar que ela topa rosto e nome.",
+        "Mandar o print da mensagem do pedido.",
+        "Narrar as falas.",
+        "Eu: capturar roleta quadro a quadro + card clubBook e montar no Remotion."
       ],
       "capa": "material/telas-com-selo/3b-revelacao.png"
     },
@@ -259,19 +586,19 @@
       "id": "12-paginas",
       "tipo": "carrossel",
       "titulo": "12 páginas por dia",
-      "data": "2026-10-10",
-      "hora": "11:00",
-      "status": "aprovar",
+      "data": "2026-10-08",
+      "status": "postado",
       "pasta": "carrossel-12-paginas",
       "legenda": "legenda.txt",
       "fonte": "lura/marketing/instagram/2026-10-12-paginas/carrossel.html",
       "meta": "salvamento",
       "notas": [
         "Conta no slide: 12 × 365 ÷ 300 = 14,6 (300 páginas = suposição declarada).",
-        "Capa nova 01/10: amarelo com o 12 gigante."
+        "Capa nova 01/10: amarelo com o 12 gigante.",
+        "08/10 (fundador, antes de postar): capa com \"12 páginas por dia\" explícito; slide 2 com a meta do ano em cartão (6 de 30, faltam 24 livros e 12 semanas); saiu \"você venceu\" (soava IA), entrou a lombada 600 = 300 + 300; logo novo (L de fita) no último slide."
       ],
       "pendencias": [
-        "Aprovar a folha."
+        "48h: alcance, salvamentos, envios, comentários (não anotado)."
       ]
     },
     {
@@ -430,6 +757,267 @@
         "Agosto, não está no grid."
       ],
       "pendencias": []
+    },
+    {
+      "id": "reel-novidades-1-12",
+      "tipo": "reel",
+      "status": "reserva",
+      "titulo": "Por dentro da 1.12: o que mudou e como foi feito",
+      "meta": "alcance (devlog) + quem já usa",
+      "notas": [
+        "Ideia do fundador 06/10: atualização da 1.12 com seções novas, funcionalidades novas, mostrando o processo e um pouco do código.",
+        "Já no ar na web e entra no app com a 1.12 (STATUS 06/10): clube do livro (dormente até ligar), Leitores parecidos v2, aba Temporada \"Trilha\", recap do mês v2, conversas de suporte dentro do app, web desktop completa.",
+        "Formato: voz por cima, alternando a tela do app com trechos de código e do mock aprovado (redesign-livra) → tela final. \"Do rascunho ao app\" é o fio.",
+        "Código na tela: só trechos curtos e legíveis, sem chave, sem regra de segurança, sem nome de coleção sensível (firestore.rules fica fora)."
+      ],
+      "pendencias": [
+        "Esperar a 1.12 aprovada nas lojas (o Reel promete o que a pessoa vai achar ao atualizar).",
+        "Escolher 3 novidades no máximo (uma por bloco de ~10 s).",
+        "Roteiro → narração → montagem."
+      ]
+    },
+    {
+      "id": "reel-preco-livraria",
+      "tipo": "reel",
+      "status": "reserva",
+      "titulo": "Escaneei o livro na livraria: vale comprar aqui ou na Amazon?",
+      "meta": "alcance (turbinar) + clique de afiliado",
+      "notas": [
+        "Ideia do fundador 06/10: testar na livraria, escaneando o livro com o Livra, preço da Amazon × preço da loja física.",
+        "⚠️ O Livra NÃO mostra preço (medido no código 06/10, AffiliateButtons.tsx): a API de preço da Amazon exige 10 vendas qualificadas em 30 dias para dar credencial. O app abre a página do livro na Amazon pelo \"Onde comprar\"; o preço aparece lá, não no Livra.",
+        "Fluxo verdadeiro para gravar: código de barras ou capa (CoverScanSheet) → página do livro no Livra → \"Onde comprar\" → Amazon (preço) × etiqueta da livraria. Narração não pode dizer \"o Livra mostra o preço\".",
+        "Bom gancho de série: \"valeu o físico?\". Combina com o EP. 1 da Lura (que foi comprado na física).",
+        "Livraria: não mostrar rosto de funcionário nem de outros clientes."
+      ],
+      "pendencias": [
+        "Conferir no app da loja (1.11) o caminho câmera → livro → Onde comprar.",
+        "Gravar na livraria (mãos + etiqueta + tela do celular).",
+        "Se um dia a credencial da Amazon sair, o vídeo vira \"o app mostra o preço\" (outra versão)."
+      ]
+    },
+    {
+      "id": "reel-livra-autores",
+      "tipo": "reel",
+      "status": "reserva",
+      "titulo": "Construindo um lugar para autor independente no Livra",
+      "meta": "alcance + autores independentes (público novo)",
+      "notas": [
+        "Ideia do fundador 06/10: vídeo explicando ideias em produção, como a iniciativa para autores independentes terem destaque e o processo de reconhecimento.",
+        "Base real: proposta Livra Autores (lura/docs/product/livra-autores.md, BACKLOG §12). Reconhecimento = \"Este perfil é meu\" → escolhe os livros → prova por DM ao @livraapp com um código → fila do admin.",
+        "Estado 06/10: mock em aprovação; só a A0 (chão) está no ar. Tudo o resto é \"estamos construindo\" — dizer isso com todas as letras.",
+        "Em aberto (não falar no vídeo): quem paga pelo destaque (A3).",
+        "Fecho que vira pesquisa: \"Você é autor independente? Comenta AUTOR que eu te chamo pra testar primeiro.\" (lista de interesse real)."
+      ],
+      "pendencias": [
+        "Esperar o mock aprovado (as telas do vídeo saem dele, com selo \"em construção\").",
+        "Combinar com o fundador quem responde as DMs de autor antes de postar."
+      ]
+    },
+    {
+      "id": "carrossel-ranking-semana",
+      "tipo": "carrossel",
+      "status": "reserva",
+      "titulo": "Semanal: o que o Livra leu esta semana",
+      "meta": "salvamento + recorrência (quem já segue)",
+      "notas": [
+        "Ideia do fundador 06/10: mais lidos do mês/semana, mais adicionados ao Quero ler, mais bem avaliados — carrossel semanal.",
+        "Fontes reais: user_books (lidos/terminados na semana, adicionados ao Quero ler) e global_book_stats (nota média e nº de avaliações). Eu tiro os números por script, só leitura, com a service account.",
+        "Já existe no app o agregado do MÊS (community_stats/{AAAA-MM}, top 10 com ≥ 3 leitores). Semanal não existe: o script calcula na hora.",
+        "Regras: título só entra com ≥ 3 leitores (mesmo piso do app); nota só com ≥ 5 avaliações; nunca nome de quem leu.",
+        "Molde fixo de série (capa reconhecível), mas variando a diagramação dentro do molde (regra de layout).",
+        "Sugestão de slides: 1 capa · 2 mais lidos · 3 mais adicionados ao Quero ler · 4 mais bem avaliados · 5 \"e você, leu algum?\" + CTA.",
+        "30/10: candidato à 1ª edição em 16/11 como \"os 10 livros mais lidos por quem usa o Livra\". Catálogo em 30/10 (globalReaderCount): Verity 72, A hipótese do amor 57, Jantar Secreto 49, O massacre da família Hope 39, Nunca minta 38."
+      ],
+      "pendencias": [
+        "Rodar a 1ª medição e ver se a semana tem volume (piso de 3 leitores) — senão começar mensal.",
+        "Definir o dia fixo (sugestão: segunda, junto com a virada da liga)."
+      ],
+      "data": "2026-11-16"
+    },
+    {
+      "id": "novidades-1-12",
+      "tipo": "carrossel",
+      "titulo": "Novidades 1.12 + o que vem aí",
+      "data": "2026-10-14",
+      "hora": "19:00",
+      "status": "aprovar",
+      "pasta": "carrossel-novidades-1-12",
+      "legenda": "legenda.txt",
+      "fonte": "lura/marketing/instagram/2026-10-novidades-1-12/carrossel.html",
+      "meta": "quem já usa o app (atualizar) + abre a série de mecânicas",
+      "notas": [
+        "Pedido 06/10: carrossel da 1.12 com as mecânicas gerais; nos dias seguintes, uma mecânica por post.",
+        "9 slides: capa amarela com a revelação real da roleta · clube · roleta · Lura no pote + progresso · Temporada com trilha · retrospectiva · leitores parecidos · \"Não é pra mim\" · e mais + pergunta.",
+        "Prints reais das lojas 1.12 (código 9cb819dc, persona). Diagramação diferente da 1.11 (sem numeração 01..07, capa não é ink).",
+        "Evitados nos prints: capa do Verity que não carregou, \"A Autoestrada\" com autor \"Duda\" no pote, 2º cartão de Leitores parecidos (\"jaoo @joao\"), sinopse com &#xa0;.",
+        "14/10: refeito. 1.12 nas lojas desde 10/10 (medido). Sai o \"até 3 livros\" (servidor passou a 10 por pessoa em 13/10); entra o slide 9 \"E vem mais\" (votação no clube, mascotes PRO, tema de Halloween, lugar pra autores, ícone novo); logo novo Fita em L no fim. 10 slides.",
+        "14/10 (2ª passada): capa em papel (o 12 páginas abriu em amarelo); telas do clube recapturadas do código da 1.12 (worktree lura-1-12-wt em dcdf9ed1, clube idêntico ao da loja) com capas reais da Apple e autor certo — roleta coerente: girando → \"saiu!\" Lendário → revelação \"sorteado entre 5 livros\"."
+      ],
+      "pendencias": [
+        "Aprovar a folha nova.",
+        "Confirmar se o tema de Halloween já está no app 1.12 (se não, ele só chega com o próximo build e o slide diz \"vem aí\", sem data)."
+      ]
+    },
+    {
+      "id": "mecanica-clube",
+      "tipo": "carrossel",
+      "titulo": "Clube do livro, passo a passo",
+      "data": null,
+      "hora": "12:00",
+      "status": "reserva",
+      "meta": "quem já usa o app (salvamento)",
+      "notas": [
+        "Série de mecânicas (uma por post), pedido 06/10. A maior da 1.12, por isso vem primeiro.",
+        "Roteiro: criar a liga como clube (PRO, trial conta; entrar é grátis) → pote (até 3 por pessoa, do Quero Ler ou da busca) → girar a roleta OU escolher direto → livro da vez com prazo → registrar leitura e notas ali → onde cada pessoa está → trocar quando terminar ou desistir → estante do clube.",
+        "Sugestão da Lura: 1 por ciclo, porquê do GRUPO, nunca de uma pessoa.",
+        "Sem prêmio na roleta (lei de sorteio): não falar em ganhar nada.",
+        "Card do livro da vez do Studio (clubBook) pode fechar o post: \"posta o do seu clube\".",
+        "14/10: sai da agenda. O clube é explicado no Reel \"Destruíram o meu aplicativo\" (aguarda narração + take da Vitória). Volta se o Reel não sair."
+      ],
+      "pendencias": [
+        "Capturar o clube no harness da 1.12 com fixture limpa (capa do livro da vez carregada; nada de autor errado no pote).",
+        "Montar e aprovar."
+      ]
+    },
+    {
+      "id": "mecanica-lura-nao-e-pra-mim",
+      "tipo": "carrossel",
+      "titulo": "Como a Lura escolhe (e o \"Não é pra mim\")",
+      "data": "2026-10-23",
+      "hora": "12:00",
+      "status": "roteiro",
+      "meta": "quem já usa o app (salvamento)",
+      "notas": [
+        "Série de mecânicas. Conversa com o Reel da Lura EP. 1 (06/10).",
+        "O que ela olha: o que você leu, a nota que deu e a sua fila (texto real da tela: \"a partir do que você leu, da nota que deu e da sua fila\").",
+        "\"Não é pra mim\": diz se já leu ou se não é seu estilo; ela troca na hora pelo livro de reserva e aquele não volta. Free e PRO.",
+        "Não citar a cota nova do Free (28 dias): mudança de cota não é novidade pra anunciar."
+      ],
+      "pendencias": [
+        "Conferir no código o texto das opções do \"Não é pra mim\" antes do roteiro.",
+        "Montar e aprovar."
+      ]
+    },
+    {
+      "id": "mecanica-leitores-parecidos",
+      "tipo": "carrossel",
+      "titulo": "Leitores parecidos: como o Livra acha gente como você",
+      "data": "2026-10-27",
+      "hora": "12:00",
+      "status": "roteiro",
+      "meta": "quem já usa o app (salvamento)",
+      "notas": [
+        "Série de mecânicas.",
+        "Como escolhe: livros em comum na estante (e gênero quando falta livro); muda toda segunda; × esconde até segunda; chave em Ajustes; texto de Privacidade explica.",
+        "Bom pra quem não segue ninguém: medido 01/10, 434 de 491 contas não seguiam ninguém (usar só com data, se entrar)."
+      ],
+      "pendencias": [
+        "Persona nos dois cartões (sem \"jaoo @joao\").",
+        "Montar e aprovar."
+      ]
+    },
+    {
+      "id": "mecanica-retrospectiva",
+      "tipo": "carrossel",
+      "titulo": "Sua retrospectiva de outubro chegou",
+      "data": "2026-11-02",
+      "hora": "12:00",
+      "status": "roteiro",
+      "meta": "quem já usa o app (salvamento)",
+      "notas": [
+        "Série de mecânicas, no dia em que a retrospectiva de outubro aparece (quando a pessoa tem o que ver).",
+        "Telas: páginas do mês, dias com leitura, seu horário, melhor dia, sessão mais longa, livro mais rápido.",
+        "Pergunta: \"qual foi o seu número de outubro?\" (comentário fácil).",
+        "Confirmada para seg 02/11 pelo fundador (29/10), à frente do red flags.",
+        "Conferido no código em 30/10: monthlyDigest gera o recap no dia 1º às 4h (Brasília) e dispatchMonthlyDigestPush manda o push na 1ª segunda do mês às 9h, ou seja, seg 02/11."
+      ],
+      "pendencias": [
+        "Montar e aprovar."
+      ]
+    },
+    {
+      "id": "pista-dia-do-livro",
+      "tipo": "carrossel",
+      "titulo": "Pista de outubro: a conquista de um dia só",
+      "data": "2026-10-21",
+      "hora": "12:00",
+      "status": "aprovar",
+      "pasta": "carrossel-pista-dia-do-livro",
+      "legenda": "legenda.txt",
+      "fonte": "lura/marketing/instagram/2026-10-pista-dia-do-livro/carrossel.html",
+      "meta": "comentário + salvamento (quem já segue)",
+      "notas": [
+        "Pista mensal das secretas (BACKLOG §13): outubro = Dia do Livro. Regra no código: qualquer registro de leitura (progresso, Foco ou conclusão) em 29/10, fuso de Brasília; abrir o app não vale.",
+        "A data não aparece: a pista é \"o dia do livro, em outubro\". Frase pública da conquista: \"Comemorou do único jeito que faz sentido.\" Conta pra Platina.",
+        "Cartão de desbloqueio só na 1.12 (BUG-303); lojas em 1.12 desde 10/10."
+      ],
+      "pendencias": [
+        "Aprovar a folha.",
+        "Story no próprio 29/10: \"é hoje\" (eu faço)."
+      ]
+    },
+    {
+      "id": "reel-mascotes",
+      "tipo": "reel",
+      "titulo": "Eles invadiram o Livra (mascotes)",
+      "status": "aprovar",
+      "pasta": "reel-mascotes",
+      "roteiro": "roteiro.md",
+      "meta": "alcance (turbinar)",
+      "notas": [
+        "Capa (27/10): \"eles invadiram o Livra\", os dois de verdade como adesivos sobre mancha laranja, versões do app aos pés; miolo 3:4 conferido. Legendas por plataforma + comentário fixado (iPhone nesta semana) em legendas-plataformas.md.",
+        "v3 (27/10, 43 s): música do fundador (videoplayback.m4a) por baixo da voz intocada, abaixando quando ele fala; a batida entra em 21 s, junto com \"trouxeram os primeiros companheiros\"; sobe no cartão final. Tela inicial ocupa a fala inteira (saiu a cena dos dois perfis); cartão final com App Store, Google Play e web.",
+        "v2 (27/10, 41 s): voz com tratamento mínimo (pausas naturais), animações mais lentas, deslize entre Bigode e Yuki, adesivos voltando pro vídeo, cor do começo corrigida, visita com \"seu perfil\" × \"quem visita\", sem bolinha. v1 reprovada: áudio \"destroçado\", corrido, corte seco, começo quente.",
+        "v1 montado 27/10 (36,6 s): Live Photo do Bigode pausa na lambida e vira adesivo → Yuki da dupla → os dois de verdade → viram os desenhos do app e invadem o celular → perfil, tela inicial (3 lugares) e visita com telas reais + bicho animado → bocejo e sono reais → noite, dorme até marcar progresso → \"escolha seu personagem\" com os 5 → Loja PRO + moedas, cadeados abrindo → moedas → comenta → Bigode dormindo + marca.",
+        "Arte dos bichos = a do app (petArt.ts) animada peça por peça; telas = home-pet-harness (código dos mascotes, 1.13). Preço fora da tela.",
+        "Sem música no arquivo: dá pra pôr uma no Instagram com volume baixo, por baixo da voz.",
+        "Postar com a 1.13 nas DUAS lojas (26/10: iOS 1.12, Android 1.13)."
+      ],
+      "pendencias": [
+        "Confirmar que a música é livre pra uso comercial/turbinar e, se pedir crédito, pôr na legenda.",
+        "Aprovar o vídeo.",
+        "Postar quando a 1.13 sair no iPhone."
+      ],
+      "legenda": "legenda.txt",
+      "capa": "capa.png"
+    },
+    {
+      "id": "reel-halloween",
+      "tipo": "reel",
+      "titulo": "O Livra se vestiu de Halloween",
+      "data": "2026-10-27",
+      "status": "roteiro",
+      "pasta": "reel-halloween",
+      "roteiro": "roteiro.md",
+      "meta": "alcance (turbinar) · prazo",
+      "notas": [
+        "Roteiro no documento de 24/10. ~30 s, só texto na tela + áudio de suspense em alta (escolhido no Instagram); narração opcional.",
+        "Tema grátis de 15/10 a 02/11 (themes.ts); conquista \"Gostosuras ou Leituras\" (halloween_2026) ao vestir. No dia 03 o tema de antes volta sozinho.",
+        "iPhone ainda na 1.12 (medido 26/10), Android na 1.13: comentário fixado avisa o iPhone e manda pra web."
+      ],
+      "pendencias": [
+        "Eu: capturar Início com a aranha, perfil com brasas/morcegos, banner \"Usar grátis\" e a conquista acendendo (halloween-harness) e montar no Remotion.",
+        "Postar até ~28/10 (a janela fecha em 02/11)."
+      ]
+    },
+    {
+      "id": "reel-autores",
+      "tipo": "reel",
+      "titulo": "Livra para autores",
+      "status": "material",
+      "pasta": "reel-autores",
+      "roteiro": "roteiro.md",
+      "meta": "alcance + autores (público novo)",
+      "notas": [
+        "Roteiro no documento de 24/10: ~75 s, fundador falando para a câmera, telas em motion. Verificação e Painel de autoria no ar na web desde 23/10.",
+        "Decisão do fundador: aparecer com rosto e nome (até aqui os vídeos foram sem rosto)."
+      ],
+      "pendencias": [
+        "Postar com a 1.13 nas duas lojas.",
+        "Verificar 1–2 autores parceiros antes (hoje 0 verificados).",
+        "Corrigir \"Criada por uma leitora\" na ficha da comunidade ou enquadrar sem.",
+        "Gravar a fala para a câmera."
+      ]
     }
   ]
 }

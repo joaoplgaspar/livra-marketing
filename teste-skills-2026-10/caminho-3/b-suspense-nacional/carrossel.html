@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Suspenses de fim de semana</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Reenie+Beanie&display=block">
+<style>
+/* Direção: "a espessura do livro". O argumento da pauta é tamanho, então o
+   desenho mede: um trilho de 600 páginas (o tijolo) atravessa os slides e
+   cada livro preenche só o que tem. Cada livro veste a cor da própria capa.
+   Toque do Livra = as fontes (Bricolage, Fraunces, Reenie); a paleta é
+   da pauta: concreto molhado + as capas. */
+:root{
+  --rain:#d6d9d7; --rain-2:#c4c8c6; --night:#141618; --blood:#9e1a1f;
+  --display:"Bricolage Grotesque",sans-serif; --serif:"Fraunces",Georgia,serif; --hand:"Reenie Beanie",cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000}
+body{font-family:var(--display);font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
+p,h1,h2,h3{text-wrap:pretty}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;padding:108px 96px;display:flex;flex-direction:column;
+  background:var(--bg);color:var(--fg)}
+.d{font-weight:800;letter-spacing:-.05em;line-height:.93}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.02em}
+.grow{flex:1}
+
+/* o trilho: 600 páginas = 888px de largura; o livro preenche pages/600 */
+.rail{position:relative;height:100px;border:3px dashed color-mix(in srgb,var(--fg) 45%,transparent);border-radius:4px}
+.rail .fill{position:absolute;left:-3px;top:-3px;bottom:-3px;width:calc(var(--p) / 600 * 100% + 3px);background:
+  repeating-linear-gradient(90deg,var(--acc) 0 3px,color-mix(in srgb,var(--acc) 72%,var(--bg)) 3px 7px);border-radius:4px 0 0 4px}
+.rail .lbl{position:absolute;top:50%;left:calc(var(--p) / 600 * 100% + 28px);transform:translateY(-50%);
+  white-space:nowrap;font-size:44px;font-weight:700;letter-spacing:-.02em}
+
+/* 1 */
+.s1{--bg:var(--rain);--fg:var(--night)}
+.s1 h1{font-size:120px}
+.s1 .note{font-family:var(--hand);font-size:80px;line-height:.9;color:var(--blood);margin-top:44px;margin-left:12px;white-space:nowrap;transform:rotate(-2.5deg);transform-origin:left}
+.covers{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;align-items:end}
+.covers img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;box-shadow:0 18px 30px -18px rgba(20,22,24,.55)}
+
+/* 2 */
+.s2{--bg:var(--night);--fg:#e9ebea;--acc:#5d6266}
+.s2 h2{font-size:132px}
+.s2 .it{font-size:68px;line-height:1.1;margin-top:56px;color:#b9bebd}
+.s2 .brick{height:220px;border-radius:4px;background:repeating-linear-gradient(90deg,#4a4f53 0 3px,#2a2e31 3px 7px)}
+
+/* livros */
+.book .top{display:grid;grid-template-columns:1fr 390px;gap:44px;align-items:start}
+.book .n{font-family:var(--serif);font-style:italic;font-weight:300;font-size:180px;line-height:.72;color:var(--acc);margin-bottom:44px}
+.book h3{font-size:68px;line-height:.98;letter-spacing:-.045em;font-weight:800}
+.book .au{font-size:38px;font-weight:500;margin-top:22px;opacity:.82;letter-spacing:-.015em}
+.book .cover{width:390px;aspect-ratio:2/3;object-fit:cover;display:block;box-shadow:0 24px 40px -20px rgba(0,0,0,.6)}
+.book .blurb{font-family:var(--serif);font-weight:400;font-size:44px;line-height:1.3;letter-spacing:-.01em;margin-top:60px}
+.book .rail{margin-top:auto}
+.b1{--bg:#b7bb16;--fg:#15170a;--acc:#15170a}
+.b2{--bg:#76161b;--fg:#f7dfe6;--acc:#f19bb8}
+.b3{--bg:#151416;--fg:#efedf6;--acc:#8f78dc}
+.b4{--bg:#2d3135;--fg:#eef0f0;--acc:#f07aa0}
+
+/* 7 */
+.s7{--bg:var(--blood);--fg:#fbeeee;justify-content:center}
+.s7 p{font-size:120px}
+
+/* 8 */
+.s8{--bg:var(--rain);--fg:var(--night)}
+.s8 h2{font-size:120px}
+.s8 .it{font-size:68px;margin-top:28px;color:var(--blood)}
+.s8 .covers{gap:40px}
+.s8 figure{display:flex;flex-direction:column;gap:18px}
+.s8 figcaption{font-family:var(--serif);font-style:italic;font-weight:400;font-size:64px;line-height:1}
+.s8 .save{font-size:42px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.s8 .foot{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.s8 .foot img{height:52px;width:auto;flex:none}
+</style>
+</head>
+<body>
+
+<section class="slide s1">
+  <h1 class="d">4 suspenses nacionais que acabam num fim de semana</h1>
+  <p class="note">todos com menos de 280 páginas</p>
+  <div class="grow"></div>
+  <div class="covers">
+    <img src="../../capas/borges.jpg" alt="">
+    <img src="../../capas/silencio-da-chuva.jpg" alt="">
+    <img src="../../capas/mulher-no-escuro.jpg" alt="">
+    <img src="../../capas/dias-perfeitos.jpg" alt="">
+  </div>
+</section>
+
+<section class="slide s2">
+  <h2 class="d">Nada de tijolo de 600 páginas.</h2>
+  <p class="it">Começa sexta à noite, termina domingo antes do jantar.</p>
+  <div class="grow"></div>
+  <div class="brick" aria-hidden="true"></div>
+</section>
+
+<section class="slide book b1">
+  <div class="top">
+    <div>
+      <div class="n">1</div>
+      <h3>Borges e os orangotangos eternos</h3>
+      <p class="au">Luis Fernando Verissimo</p>
+    </div>
+    <img class="cover" src="../../capas/borges.jpg" alt="">
+  </div>
+  <p class="blurb">Um cinquentão que vive entre livros vai a um congresso sobre Edgar Allan Poe em Buenos Aires, conhece Jorge Luis Borges e acaba no meio de um crime.</p>
+  <div class="rail" style="--p:133"><div class="fill"></div><span class="lbl">133 páginas</span></div>
+</section>
+
+<section class="slide book b2">
+  <div class="top">
+    <div>
+      <div class="n">2</div>
+      <h3>O silêncio da chuva</h3>
+      <p class="au">Luiz Alfredo Garcia-Roza</p>
+    </div>
+    <img class="cover" src="../../capas/silencio-da-chuva.jpg" alt="">
+  </div>
+  <p class="blurb">Um executivo aparece morto ao volante do próprio carro, no centro do Rio. Ninguém viu nada. O inspetor Espinosa começa a puxar o fio.</p>
+  <div class="rail" style="--p:262"><div class="fill"></div><span class="lbl">262 páginas</span></div>
+</section>
+
+<section class="slide book b3">
+  <div class="top">
+    <div>
+      <div class="n">3</div>
+      <h3>Uma mulher no escuro</h3>
+      <p class="au">Raphael Montes</p>
+    </div>
+    <img class="cover" src="../../capas/mulher-no-escuro.jpg" alt="">
+  </div>
+  <p class="blurb">Victoria tinha quatro anos quando a família foi assassinada. Vinte anos depois, o assassino volta. Jabuti 2020 de romance de entretenimento.</p>
+  <div class="rail" style="--p:273"><div class="fill"></div><span class="lbl">273 páginas</span></div>
+</section>
+
+<section class="slide book b4">
+  <div class="top">
+    <div>
+      <div class="n">4</div>
+      <h3>Dias perfeitos</h3>
+      <p class="au">Raphael Montes</p>
+    </div>
+    <img class="cover" src="../../capas/dias-perfeitos.jpg" alt="">
+  </div>
+  <p class="blurb">Amor obsessivo e paranoico, do mesmo autor que criou Bom dia, Verônica. Sombrio e claustrofóbico.</p>
+  <div class="rail" style="--p:274"><div class="fill"></div><span class="lbl">274 páginas</span></div>
+</section>
+
+<section class="slide s7">
+  <p class="d">Manda pra quem diz que não tem tempo de ler.</p>
+</section>
+
+<section class="slide s8">
+  <h2 class="d">Qual você começa na sexta?</h2>
+  <p class="it">Responde com o número.</p>
+  <div class="grow"></div>
+  <div class="covers">
+    <figure><img src="../../capas/borges.jpg" alt=""><figcaption>1</figcaption></figure>
+    <figure><img src="../../capas/silencio-da-chuva.jpg" alt=""><figcaption>2</figcaption></figure>
+    <figure><img src="../../capas/mulher-no-escuro.jpg" alt=""><figcaption>3</figcaption></figure>
+    <figure><img src="../../capas/dias-perfeitos.jpg" alt=""><figcaption>4</figcaption></figure>
+  </div>
+  <div class="grow"></div>
+  <div class="foot">
+    <p class="save">Salva pra quando o fim de semana chegar.</p>
+    <img src="file:///E:/Projetos/lura/redesign-livra/logo/final/livra-assinatura-claro.svg" alt="Livra">
+  </div>
+</section>
+
+</body>
+</html>

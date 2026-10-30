@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Novidades 1.13 · carrossel</title>
+<link rel="stylesheet" href="file:///E:/Projetos/lura/.claude/skills/instagram-carousel/base.css">
+<!--
+  Novidades da 1.13 · sex 30/10/2026 · skill instagram-carousel, nível A. Molde: novidades 1.12 (celular + recortes em cartão).
+  App Store 1.13 publicada 30/10 13:45Z (lookup); Play 1.13 desde 26/10 (STATUS). Binário = main 13bf0216.
+  PRINTS: harnesses da própria versão (worktree lura-a1c, código = 13bf0216), dados fictícios. Detalhe e fontes em roteiro.md.
+  Texto = notas da loja 1.13 (marketing/lojas/1-13/ios.txt). Mascote: PRO na 1.13 (a web já vende sem PRO; não citar a web aqui).
+-->
+<style>
+  .tag { font-size: 30px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; padding: 12px 22px; border-radius: 99px; align-self: flex-start; }
+  .tag.free { background: rgba(127, 163, 107, .2); color: #4f7a3c; }
+  .ink .tag.free { color: #a9cc95; }
+  .kick { font-size: 30px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+  .ink .kick { color: var(--muted-d); } .paper .kick { color: var(--muted-l); } .brand .kick { color: rgba(255,255,255,.82); }
+  .phone { position: absolute; border-radius: 64px; padding: 14px; background: #120d0a;
+           box-shadow: 0 50px 90px -30px rgba(20, 12, 6, .65), inset 0 0 0 2px rgba(255,255,255,.06); }
+  .phone img { display: block; width: 100%; border-radius: 50px; }
+  .ink .phone { box-shadow: 0 50px 90px -30px rgba(0, 0, 0, .8), inset 0 0 0 2px rgba(255,255,255,.1); }
+  /* recorte: img com largura 390*escala; margens = -(região em pt)*escala */
+  .crop { position: absolute; overflow: hidden; border-radius: 40px; background: #f4f1ec;
+          box-shadow: 0 40px 80px -30px rgba(20, 12, 6, .55), 0 0 0 2px rgba(22,17,13,.06); }
+  .crop img { display: block; }
+  .note { position: absolute; font-family: var(--hand); line-height: .95; }
+  .ink .note { color: var(--marker); } .paper .note { color: var(--brand-deep); } .brand .note { color: #fff; }
+
+  /* 1 — capa */
+  .s1 .hand.kicker { font-size: 84px; transform: rotate(-4deg); transform-origin: left; }
+  .s1 .h1 { font-size: 132px; line-height: .9; margin-top: 30px; max-width: 900px; }
+  .s1 .icone { position: absolute; right: 70px; bottom: 90px; width: 440px; border-radius: 100px; transform: rotate(6deg);
+               box-shadow: 0 50px 90px -30px rgba(60,30,0,.55), 0 0 0 2px rgba(22,17,13,.06); }
+  .s1 .ver { position: absolute; left: 96px; bottom: 100px; font-size: 170px; font-weight: 800; letter-spacing: -.06em; line-height: .8; }
+  .s1 .note { left: 110px; bottom: 300px; font-size: 64px; transform: rotate(-5deg); width: 380px; }
+
+  .h2.mid { font-size: 92px; line-height: .95; }
+  .body.side { position: absolute; left: 96px; width: 400px; font-size: 42px; line-height: 1.2; }
+
+  /* 5 — passos do selo */
+  .steps { list-style: none; margin-top: 56px; counter-reset: s; }
+  .steps li { counter-increment: s; display: flex; gap: 30px; align-items: baseline; padding: 26px 0; border-bottom: 2px solid var(--line-d);
+              font-size: 50px; font-weight: 600; letter-spacing: -.02em; line-height: 1.15; padding: 36px 0; }
+  .steps li::before { content: counter(s); flex: none; font-family: var(--hand); font-size: 76px; line-height: .6; color: var(--marker); width: 40px; }
+  .steps b { color: var(--marker); font-weight: 700; }
+
+  /* 8 — e mais */
+  .more { list-style: none; margin-top: 30px; }
+  .more li { display: flex; gap: 26px; align-items: baseline; padding: 21px 0; border-bottom: 2px solid var(--line-l); font-size: 40px; font-weight: 600; letter-spacing: -.02em; line-height: 1.12; }
+  .more li::before { content: ""; flex: none; width: 16px; height: 16px; border-radius: 50%; background: var(--brand); transform: translateY(-6px); }
+  .more .pro { font-size: 26px; font-weight: 800; letter-spacing: .06em; padding: 6px 12px; border-radius: 99px; background: var(--marker); color: var(--ink); margin-left: 10px; vertical-align: 6px; }
+
+  /* 9 */
+  .s9 .h2 { font-size: 112px; line-height: .95; }
+  .s9 .ask { margin-top: 50px; font-size: 54px; font-weight: 600; line-height: 1.2; max-width: 820px; }
+  .s9 .save { margin-top: 70px; font-size: 92px; transform: rotate(-3deg); transform-origin: left; display: inline-block; }
+  .s9 .sig .logo { height: 48px; }
+</style>
+</head>
+<body>
+<div class="strip">
+
+  <!-- 1 · capa: papel + ícone novo (Halloween e Jabuti, que vêm depois, abrem em escuro e verde) -->
+  <section class="slide paper s1">
+    <p class="hand kicker">a 1.13 chegou</p>
+    <h1 class="h1">O Livra agora tem lugar pra <span class="serif">quem escreve.</span></h1>
+    <p class="note">e cara nova, reparou?</p>
+    <img class="icone" src="file:///E:/Projetos/lura/redesign-livra/logo/final/png/livra-icone-1024.png" alt="Ícone novo do Livra">
+    <p class="ver">1.13</p>
+  </section>
+
+  <!-- 2 · vitrine de autores na Busca (prints/busca.png inteiro) -->
+  <section class="slide ink s2">
+    <p class="kick">Livra Autores</p>
+    <h2 class="h2 mid" style="margin-top:26px;max-width:560px">Na Busca, uma <span class="serif">vitrine de autores.</span></h2>
+    <p class="body side muted" style="top:820px">Quem está sendo lido, os lançamentos, as editoras e os independentes.</p>
+    <div class="phone" data-bleed style="left:560px;top:330px;width:470px;transform:rotate(3deg)"><img src="prints/busca.png" alt=""></div>
+  </section>
+
+  <!-- 3 · do livro para o autor (prints/livro.png inteiro) -->
+  <section class="slide paper s3">
+    <p class="kick">Livra Autores</p>
+    <h2 class="h2 mid" style="margin-top:26px;max-width:560px">Cada autor ganha <span class="serif">uma página.</span></h2>
+    <p class="body side muted" style="top:760px">Com as obras e os lançamentos. Dá pra seguir uma editora e receber às sextas o que ela vai lançar.</p>
+    <div class="phone" data-bleed style="left:560px;top:330px;width:470px;transform:rotate(-3deg)"><img src="prints/livro.png" alt=""></div>
+  </section>
+
+  <!-- 4 · Garimpo (garimpo-unlock: cartão x 16..374, y 192..652 pt; escala 1,9) -->
+  <section class="slide brand s4">
+    <p class="kick">Garimpo</p>
+    <h2 class="h2 mid" style="margin-top:26px">Livro independente <span class="serif">agora conta.</span></h2>
+    <div class="crop" style="left:400px;top:470px;width:609px;height:782px;transform:rotate(3deg);background:#fff;border-radius:44px"><img src="prints/garimpo-unlock.png" alt="" style="width:663px;margin:-326px 0 0 -27px"></div>
+    <p class="note" style="left:96px;top:560px;width:280px;font-size:60px;transform:rotate(-4deg)">3 conquistas novas pra quem lê autor independente</p>
+  </section>
+
+  <!-- 5 · selo de autor (sem tela: passos das notas da loja) -->
+  <section class="slide ink s5">
+    <p class="kick">Sou autor</p>
+    <h2 class="h2 mid" style="margin-top:26px">Você escreve? <span class="serif">Peça o selo.</span></h2>
+    <ol class="steps">
+      <li><span>Vá em <b>Ajustes › Sou autor</b>.</span></li>
+      <li><span>Ligue os seus livros ao seu perfil e peça a verificação.</span></li>
+      <li><span>Com o selo, você cuida da sua página, troca a capa dos seus livros e vê quantas pessoas têm suas obras na estante.</span></li>
+    </ol>
+  </section>
+
+  <!-- 6 · Halloween (loja-temporada: banner x 16..374, y 143..363 pt; escala 2,48) -->
+  <section class="slide paper s6">
+    <span class="tag free">grátis até 2/11</span>
+    <h2 class="h2 mid" style="margin-top:30px">O tema de Halloween é de graça. <span class="serif">Até segunda.</span></h2>
+    <div class="crop" style="left:96px;top:520px;width:888px;height:546px;transform:rotate(-2deg);background:#1d1226;border-radius:56px"><img src="prints/loja-temporada.png" alt="" style="width:967px;margin:-355px 0 0 -40px"></div>
+    <p class="note" style="left:300px;top:1110px;width:680px;font-size:60px;transform:rotate(-3deg)">e quem usar ganha a conquista Gostosuras ou Leituras</p>
+  </section>
+
+  <!-- 7 · aba Temporada (loja-temporada-aba: x 16..374, y 222..748 pt; escala 1,75) -->
+  <section class="slide ink s7">
+    <p class="kick">Loja</p>
+    <h2 class="h2 mid" style="margin-top:26px;max-width:520px">A Loja ganhou a <span class="serif">aba Temporada.</span></h2>
+    <p class="body side muted" style="top:820px">Tudo o que tem data pra sair fica num lugar só.</p>
+    <div class="crop" style="left:540px;top:420px;width:501px;height:736px;transform:rotate(3deg);background:#f4f1ec;border-radius:36px"><img src="prints/loja-temporada-aba.png" alt="" style="width:546px;margin:-311px 0 0 -22px"></div>
+  </section>
+
+  <!-- 8 · e mais -->
+  <section class="slide paper s8">
+    <p class="kick">E mais</p>
+    <ul class="more">
+      <li>Mascotes ao lado da sua foto <span class="pro">PRO</span></li>
+      <li>Clube do livro com pote animado e até 10 livros por pessoa</li>
+      <li>Meta do ano opcional</li>
+      <li>Remover um seguidor sem precisar bloquear</li>
+      <li>Esconder uma sugestão de leitor parecido</li>
+      <li>A Lura não sugere mais o que já está na sua estante</li>
+    </ul>
+    <div class="folio"><span>novidades da 1.13</span></div>
+  </section>
+
+  <!-- 9 · pergunta + assinatura -->
+  <section class="slide ink s9">
+    <h2 class="h2">Qual você testa <span class="serif">primeiro?</span></h2>
+    <p class="ask muted">A 1.13 já está na App Store e no Google Play.</p>
+    <p class="hand save">Atualiza e me conta.</p>
+    <div class="spacer"></div>
+    <div class="sig"><img class="logo" src="file:///E:/Projetos/lura/redesign-livra/logo/final/livra-assinatura-escuro.svg" alt="Livra"></div>
+  </section>
+
+</div>
+</body>
+</html>

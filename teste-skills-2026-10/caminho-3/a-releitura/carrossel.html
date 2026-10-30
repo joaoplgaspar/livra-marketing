@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Releitura conta na meta</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Reenie+Beanie&display=block">
+<style>
+/* Direção: "o livro lido duas vezes". A primeira leitura fala em Bricolage
+   (afirmação seca); a segunda chega em Fraunces itálico, como a voz que
+   volta ao texto. A caneta do Livra (Reenie Beanie + traço terracota)
+   aparece só onde há gesto de leitor: riscar, sublinhar, anotar. */
+:root{
+  --ink:#16110d; --ink-2:#221a14; --paper:#f4ecdc; --paper-2:#eadfca;
+  --brand:#e0552f; --brand-deep:#b53f20; --marker:#f4d44d;
+  --muted-d:rgba(244,236,220,.64); --muted-l:rgba(22,17,13,.66);
+  --display:"Bricolage Grotesque",sans-serif; --serif:"Fraunces",Georgia,serif; --hand:"Reenie Beanie",cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000}
+body{font-family:var(--display);font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
+.slide{position:relative;width:1080px;height:1350px;overflow:hidden;padding:120px 104px;display:flex;flex-direction:column}
+.ink{background:var(--ink);color:var(--paper)}
+.paper{background:var(--paper);color:var(--ink)}
+.brand{background:var(--brand);color:#fff}
+.slide::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.grow{flex:1}
+p,h1,h2{text-wrap:pretty}
+.s8 .ponte{text-wrap:balance}
+.d{font-family:var(--display);font-weight:800;letter-spacing:-.05em;line-height:.92}
+.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.025em;font-variation-settings:"SOFT" 100,"WONK" 1}
+.h{font-family:var(--hand);font-weight:400;line-height:.9}
+
+/* 1 */
+.s1 .d{font-size:150px}
+.s1 .sim{font-size:330px;line-height:.8;color:var(--brand);margin-top:28px;margin-left:-10px}
+.s1 .note{position:absolute;right:110px;bottom:170px;font-size:96px;color:var(--marker);transform:rotate(-5deg);text-align:right;width:600px}
+.s1 svg.arrow{position:absolute;left:560px;top:760px;width:230px;height:250px}
+
+/* 2 */
+.s2{justify-content:center}
+.s2 p{font-size:92px;line-height:1.02}
+.s2 .claim{text-decoration:line-through;text-decoration-color:var(--brand);text-decoration-thickness:.085em;text-decoration-skip-ink:none}
+
+/* 3 */
+.s3 .d{font-size:140px}
+.s3 .s{font-size:80px;line-height:1.06;color:var(--muted-d);margin-top:56px;max-width:860px}
+.s3 .list{margin-top:auto;display:grid;gap:0}
+.s3 .row{height:74px;border-bottom:2px solid rgba(244,236,220,.13);position:relative}
+.s3 .row svg{position:absolute;left:0;bottom:12px;width:58px;height:50px}
+
+/* 4 */
+.s4 .d{font-size:100px;max-width:860px}
+.s4 .age{display:grid;grid-template-columns:300px 1fr;align-items:end;column-gap:36px;margin-top:64px}
+.s4 .age .s{font-size:200px;line-height:.78;color:var(--brand)}
+.s4 .age p{font-size:56px;line-height:1.08;font-weight:600;letter-spacing:-.025em;padding-bottom:10px}
+.s4 .rule{height:0;border-top:3px solid rgba(22,17,13,.16);margin-top:64px}
+.s4 .age.second{margin-top:56px}
+
+/* 5 */
+.s5 .d{font-size:112px;line-height:.95}
+.s5 .s{font-size:96px;line-height:1.16;margin-top:auto}
+.s5 .s>span{display:block}
+.s5 .under{padding-bottom:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 24' preserveAspectRatio='none'%3E%3Cpath d='M3 14 C80 6 170 20 250 11 C310 5 360 9 397 15' fill='none' stroke='%23f4d44d' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E") left bottom/100% 22px no-repeat}
+
+/* 6 */
+.s6{justify-content:flex-end}
+.s6 .d{font-size:112px;line-height:.95}
+
+/* 7 */
+.s7{justify-content:center}
+.s7 .s{font-size:128px;line-height:1}
+
+/* 8 */
+.s8 .d{font-size:128px}
+.s8 .opts{font-size:80px;line-height:1.08;margin-top:52px;color:var(--brand-deep)}
+.s8 .ponte{font-size:40px;line-height:1.25;font-weight:500;letter-spacing:-.01em;color:var(--muted-l);max-width:800px}
+.s8 .foot{display:flex;flex-direction:column;gap:40px}
+.s8 img{height:76px;width:auto;align-self:flex-start}
+</style>
+</head>
+<body>
+
+<section class="slide ink s1">
+  <h1 class="d">Releitura<br>conta na<br>meta.</h1>
+  <div class="s sim">Sim.</div>
+  <svg class="arrow" viewBox="0 0 200 150" fill="none" stroke="#f4d44d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M200 236 C150 230 90 190 66 120 C58 96 52 70 48 30"/>
+    <path d="M26 54 L48 26 L70 52"/>
+  </svg>
+  <div class="h note">pode brigar nos comentários</div>
+</section>
+
+<section class="slide paper s2">
+  <p class="d">Todo fim de ano aparece alguém dizendo que <span class="claim">reler é trapacear a meta.</span></p>
+</section>
+
+<section class="slide ink s3">
+  <h2 class="d">Meta de leitura não é prova.</h2>
+  <p class="s">Ninguém vai conferir a sua lista em dezembro.</p>
+  <div class="list" aria-hidden="true">
+    <div class="row"><svg viewBox="0 0 58 50" fill="none" stroke="#e0552f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 28 L22 42 L52 8"/></svg></div>
+    <div class="row"><svg viewBox="0 0 58 50" fill="none" stroke="#e0552f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 26 L20 40 L50 10"/></svg></div>
+    <div class="row"><svg viewBox="0 0 58 50" fill="none" stroke="#e0552f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 30 L23 41 L53 6"/></svg></div>
+    <div class="row"></div>
+    <div class="row"></div>
+  </div>
+</section>
+
+<section class="slide paper s4">
+  <h2 class="d">Reler não é ler o mesmo livro.</h2>
+  <div class="age"><span class="s">Aos 15</span><p>você leu pelo romance.</p></div>
+  <div class="rule"></div>
+  <div class="age second"><span class="s">Aos 30</span><p>percebe que era sobre a mãe.</p></div>
+</section>
+
+<section class="slide ink s5">
+  <p class="d">A segunda leitura pega o que a primeira deixou passar:</p>
+  <p class="s">
+    <span>a pista no capítulo 2,</span>
+    <span><span class="under">a frase que você não sublinhou.</span></span>
+  </p>
+</section>
+
+<section class="slide brand s6">
+  <p class="d">Manda pra quem relê o mesmo livro todo dezembro e ainda pede desculpa.</p>
+</section>
+
+<section class="slide ink s7">
+  <p class="s">Se reler não contasse, ninguém teria livro preferido.</p>
+</section>
+
+<section class="slide paper s8">
+  <h2 class="d">E na sua meta, releitura conta?</h2>
+  <p class="s opts">Sim, não ou<br>“só se eu chorar de novo”.</p>
+  <div class="grow"></div>
+  <div class="foot">
+    <p class="ponte">No Livra, releitura tem botão próprio e entra no seu contador de leituras quando você termina.</p>
+    <img src="file:///E:/Projetos/lura/redesign-livra/logo/final/livra-assinatura-claro.svg" alt="Livra">
+  </div>
+</section>
+
+</body>
+</html>
